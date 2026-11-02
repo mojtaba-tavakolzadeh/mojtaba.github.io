@@ -1,0 +1,96 @@
+/* Custom additions (resume update) */
+/*======================================
+//--//-->   RESUME UPDATE ADDITIONS
+======================================*/
+.counter.plus::after {
+  content: "+";
+}
+
+.sub-heading {
+  margin: 1rem 0 2rem;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+
+.exp-modal {
+  max-width: 640px;
+  text-align: left;
+}
+
+.exp-modal h4 {
+  margin-bottom: .2rem;
+}
+
+.exp-modal h5 {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.exp-modal h5 small {
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+.exp-modal .exp-meta {
+  color: #4e4e4e;
+  margin-bottom: .8rem;
+}
+
+.exp-modal ul {
+  padding-left: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.exp-modal li {
+  margin-bottom: .35rem;
+}
+
+/* Skill groups */
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 28px;
+  margin: 3.5rem 0 1rem;
+}
+
+.skill-group {
+  background: #fff;
+  border-radius: 6px;
+  border-left: 4px solid #0078ff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 1.6rem 1.2rem;
+}
+
+.skill-group h5 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0078ff;
+  margin: 0 0 1rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags span {
+  background: #eef5ff;
+  color: #2b2b2b;
+  font-size: .85rem;
+  line-height: 1.2;
+  padding: 6px 12px;
+  border-radius: 14px;
+}
+
+.list-ico a,
+.list-ico a:hover {
+  color: inherit;
+}
+
+@media (max-width: 480px) {
+  .skill-groups {
+    grid-template-columns: 1fr;
+  }
+}

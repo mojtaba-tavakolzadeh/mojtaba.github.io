@@ -1,0 +1,304 @@
+diff --git a/css/custom.css b/css/custom.css
+new file mode 100644
+index 0000000..49ae24e
+--- /dev/null
++++ b/css/custom.css
+@@ -0,0 +1,96 @@
++/* Custom additions (resume update) */
++/*======================================
++//--//-->   RESUME UPDATE ADDITIONS
++======================================*/
++.counter.plus::after {
++  content: "+";
++}
++
++.sub-heading {
++  margin: 1rem 0 2rem;
++  font-weight: 600;
++  color: #4e4e4e;
++}
++
++.exp-modal {
++  max-width: 640px;
++  text-align: left;
++}
++
++.exp-modal h4 {
++  margin-bottom: .2rem;
++}
++
++.exp-modal h5 {
++  margin-top: 1.2rem;
++  font-size: 1rem;
++  font-weight: 600;
++}
++
++.exp-modal h5 small {
++  color: #4e4e4e;
++  font-weight: 400;
++}
++
++.exp-modal .exp-meta {
++  color: #4e4e4e;
++  margin-bottom: .8rem;
++}
++
++.exp-modal ul {
++  padding-left: 1.2rem;
++  margin-bottom: .5rem;
++}
++
++.exp-modal li {
++  margin-bottom: .35rem;
++}
++
++/* Skill groups */
++.skill-groups {
++  display: grid;
++  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
++  gap: 28px;
++  margin: 3.5rem 0 1rem;
++}
++
++.skill-group {
++  background: #fff;
++  border-radius: 6px;
++  border-left: 4px solid #0078ff;
++  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
++  padding: 1.5rem 1.6rem 1.2rem;
++}
++
++.skill-group h5 {
++  font-size: 1.05rem;
++  font-weight: 600;
++  color: #0078ff;
++  margin: 0 0 1rem;
++}
++
++.skill-tags {
++  display: flex;
++  flex-wrap: wrap;
++  gap: 8px;
++}
++
++.skill-tags span {
++  background: #eef5ff;
++  color: #2b2b2b;
++  font-size: .85rem;
++  line-height: 1.2;
++  padding: 6px 12px;
++  border-radius: 14px;
++}
++
++.list-ico a,
++.list-ico a:hover {
++  color: inherit;
++}
++
++@media (max-width: 480px) {
++  .skill-groups {
++    grid-template-columns: 1fr;
++  }
++}
+diff --git a/css/style.css b/css/style.css
+index a11e908..5d3c8a2 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -1389,85 +1389,3 @@ footer .credits a {
+     bottom: 15px;
+   }
+ }
+-
+-/*======================================
+-//--//-->   RESUME UPDATE ADDITIONS
+-======================================*/
+-.counter.plus::after {
+-  content: "+";
+-}
+-
+-.sub-heading {
+-  margin: 1rem 0 2rem;
+-  font-weight: 600;
+-  color: #4e4e4e;
+-}
+-
+-.exp-modal {
+-  max-width: 640px;
+-  text-align: left;
+-}
+-
+-.exp-modal h4 {
+-  margin-bottom: .2rem;
+-}
+-
+-.exp-modal h5 {
+-  margin-top: 1.2rem;
+-  font-size: 1rem;
+-  font-weight: 600;
+-}
+-
+-.exp-modal h5 small {
+-  color: #4e4e4e;
+-  font-weight: 400;
+-}
+-
+-.exp-modal .exp-meta {
+-  color: #4e4e4e;
+-  margin-bottom: .8rem;
+-}
+-
+-.exp-modal ul {
+-  padding-left: 1.2rem;
+-  margin-bottom: .5rem;
+-}
+-
+-.exp-modal li {
+-  margin-bottom: .35rem;
+-}
+-
+-.skill-groups {
+-  margin-top: 2.5rem;
+-}
+-
+-.skill-group {
+-  background: #fff;
+-  border-radius: 5px;
+-  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+-  padding: 1.2rem 1.4rem;
+-  margin-bottom: 1.5rem;
+-  height: calc(100% - 1.5rem);
+-}
+-
+-.skill-group h5 {
+-  font-size: 1rem;
+-  font-weight: 600;
+-  color: #0078ff;
+-  margin-bottom: .8rem;
+-}
+-
+-.skill-tags span {
+-  display: inline-block;
+-  background: #eef5ff;
+-  color: #333;
+-  font-size: .8rem;
+-  padding: 3px 10px;
+-  margin: 0 6px 6px 0;
+-  border-radius: 12px;
+-}
+-
+-.list-ico a,
+-.list-ico a:hover {
+-  color: inherit;
+-}
+diff --git a/index.html b/index.html
+index 28234dd..0b09aa5 100644
+--- a/index.html
++++ b/index.html
+@@ -37,7 +37,8 @@
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.js"></script>
+ 
+   <!-- Main Stylesheet File -->
+-  <link href="css/style.css" rel="stylesheet">
++  <link href="css/style.css?v=2" rel="stylesheet">
++  <link href="css/custom.css?v=2" rel="stylesheet">
+ 
+ </head>
+ 
+@@ -495,66 +496,46 @@
+         <!-- Add more images here -->
+       </div>
+ 
+-      <div class="row skill-groups">
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Cloud &amp; Containers</h5>
+-            <div class="skill-tags"><span>Kubernetes</span><span>Docker</span><span>Linux</span><span>NGINX</span><span>HAProxy</span><span>Traefik</span></div>
+-          </div>
++      <div class="skill-groups">
++        <div class="skill-group">
++          <h5>Cloud &amp; Containers</h5>
++          <div class="skill-tags"><span>Kubernetes</span><span>Docker</span><span>Linux</span><span>NGINX</span><span>HAProxy</span><span>Traefik</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>CI/CD &amp; GitOps</h5>
+-            <div class="skill-tags"><span>GitLab CI/CD</span><span>GitHub Actions</span><span>Argo CD</span><span>Helm</span><span>GitOps</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>CI/CD &amp; GitOps</h5>
++          <div class="skill-tags"><span>GitLab CI/CD</span><span>GitHub Actions</span><span>Argo CD</span><span>Helm</span><span>GitOps</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Infrastructure as Code</h5>
+-            <div class="skill-tags"><span>Terraform</span><span>Ansible</span><span>Bash</span><span>Python</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>Infrastructure as Code</h5>
++          <div class="skill-tags"><span>Terraform</span><span>Ansible</span><span>Bash</span><span>Python</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Platform Engineering</h5>
+-            <div class="skill-tags"><span>Internal Developer Platform</span><span>Kubernetes Platform</span><span>Platform Automation</span><span>DevEx</span><span>Platform Architecture</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>Platform Engineering</h5>
++          <div class="skill-tags"><span>Internal Developer Platform</span><span>Kubernetes Platform</span><span>Platform Automation</span><span>DevEx</span><span>Platform Architecture</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Observability</h5>
+-            <div class="skill-tags"><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>ELK Stack</span><span>Alertmanager</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>Observability</h5>
++          <div class="skill-tags"><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>ELK Stack</span><span>Alertmanager</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Security &amp; DevSecOps</h5>
+-            <div class="skill-tags"><span>HashiCorp Vault</span><span>Keycloak</span><span>SSO</span><span>OIDC</span><span>OAuth 2.0</span><span>TLS/PKI</span><span>CIS Benchmarks</span><span>Secrets Management</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>Security &amp; DevSecOps</h5>
++          <div class="skill-tags"><span>HashiCorp Vault</span><span>Keycloak</span><span>SSO</span><span>OIDC</span><span>OAuth 2.0</span><span>TLS/PKI</span><span>CIS Benchmarks</span><span>Secrets Management</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Networking</h5>
+-            <div class="skill-tags"><span>TCP/IP</span><span>DNS</span><span>Load Balancing</span><span>Reverse Proxy</span><span>Service Discovery</span><span>Network Security</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>Networking</h5>
++          <div class="skill-tags"><span>TCP/IP</span><span>DNS</span><span>Load Balancing</span><span>Reverse Proxy</span><span>Service Discovery</span><span>Network Security</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Databases &amp; Messaging</h5>
+-            <div class="skill-tags"><span>PostgreSQL</span><span>Redis</span><span>Kafka</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>Databases &amp; Messaging</h5>
++          <div class="skill-tags"><span>PostgreSQL</span><span>Redis</span><span>Kafka</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Reliability &amp; Operations</h5>
+-            <div class="skill-tags"><span>High Availability</span><span>Disaster Recovery</span><span>Incident Response</span><span>Production Operations</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>Reliability &amp; Operations</h5>
++          <div class="skill-tags"><span>High Availability</span><span>Disaster Recovery</span><span>Incident Response</span><span>Production Operations</span></div>
+         </div>
+-        <div class="col-lg-6">
+-          <div class="skill-group">
+-            <h5>Collaboration</h5>
+-            <div class="skill-tags"><span>Git</span><span>GitHub</span><span>GitLab</span><span>Jira</span><span>Confluence</span></div>
+-          </div>
++        <div class="skill-group">
++          <h5>Collaboration</h5>
++          <div class="skill-tags"><span>Git</span><span>GitHub</span><span>GitLab</span><span>Jira</span><span>Confluence</span></div>
+         </div>
+       </div>
+     </div>
