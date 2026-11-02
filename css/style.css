@@ -853,23 +853,43 @@ a:hover {
 
 
 .work-box {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
 }
 
+.work-box .work-btn {
+  margin-top: auto;
+  padding-bottom: 1.2rem;
+}
+
+.work-box .work-content {
+  padding-bottom: .8rem;
+}
+
 .work-box:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .work-img {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* same logo box for every card */
+  padding: 16px;
   overflow: hidden;
 }
 
 .work-img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   transition: all 1s;
 }
 
@@ -949,14 +969,30 @@ a:hover {
 /*======================================
 //--//-->   BLOG
 ======================================*/
+.card-img {
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.card-img a {
+  display: block;
+}
+
 .card-img img {
+  display: block;
   width: 100%;
-  height: 250px; /* same for all */
-  object-fit: cover;
+  height: 220px; /* same for all */
+  object-fit: contain; /* show the whole picture, no cropping */
+}
+
+.card-blog {
+  height: 100%;
+  overflow: hidden;
 }
 
 .card-blog .card-body {
   position: relative;
+  flex: 1 1 auto;
 }
 
 .card-blog .card-category-box {
@@ -990,6 +1026,7 @@ a:hover {
 .card-blog .card-title {
   font-size: 1.3rem;
   margin-top: .6rem;
+  min-height: 3.2rem; /* room for 2 lines so every card matches */
 }
 
 .card-blog .card-description {
@@ -1351,4 +1388,86 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
+}
+
+/*======================================
+//--//-->   RESUME UPDATE ADDITIONS
+======================================*/
+.counter.plus::after {
+  content: "+";
+}
+
+.sub-heading {
+  margin: 1rem 0 2rem;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+
+.exp-modal {
+  max-width: 640px;
+  text-align: left;
+}
+
+.exp-modal h4 {
+  margin-bottom: .2rem;
+}
+
+.exp-modal h5 {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.exp-modal h5 small {
+  color: #4e4e4e;
+  font-weight: 400;
+}
+
+.exp-modal .exp-meta {
+  color: #4e4e4e;
+  margin-bottom: .8rem;
+}
+
+.exp-modal ul {
+  padding-left: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.exp-modal li {
+  margin-bottom: .35rem;
+}
+
+.skill-groups {
+  margin-top: 2.5rem;
+}
+
+.skill-group {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.5rem;
+  height: calc(100% - 1.5rem);
+}
+
+.skill-group h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0078ff;
+  margin-bottom: .8rem;
+}
+
+.skill-tags span {
+  display: inline-block;
+  background: #eef5ff;
+  color: #333;
+  font-size: .8rem;
+  padding: 3px 10px;
+  margin: 0 6px 6px 0;
+  border-radius: 12px;
+}
+
+.list-ico a,
+.list-ico a:hover {
+  color: inherit;
 }
