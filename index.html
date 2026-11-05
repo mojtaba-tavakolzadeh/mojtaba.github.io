@@ -13,11 +13,19 @@
   <meta property="og:title" content="Mojtaba Tavakolzadeh | Senior DevOps / Platform Engineer">
   <meta property="og:description" content="Kubernetes platforms, CI/CD, GitOps, DevSecOps and cloud-native infrastructure.">
   <meta property="og:url" content="https://mojtaba.tavakolzadeh.ir/">
-  <meta property="og:image" content="https://mojtaba.tavakolzadeh.ir/img/testimonial-2.jpg">
+  <meta property="og:image" content="https://mojtaba.tavakolzadeh.ir/img/og-persepolis.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts: Marcellus (inscriptional display), Alegreya Sans (text), Vazirmatn (Persian) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Marcellus&family=Vazirmatn:wght@500&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,7 +46,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css?v=2" rel="stylesheet">
-  <link href="css/custom.css?v=4" rel="stylesheet">
+  <link href="css/persepolis.css?v=1" rel="stylesheet">
 
 </head>
 
@@ -81,14 +89,275 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="intro-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <!-- <p class="intro-subtitle"><span class="text-slider-items">CEO Amertka,DevOps Engineer</span><strong class="text-slider"></strong></p> -->
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+  <div id="home" class="intro route">
+    <svg class="hero-art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"
+ xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#050b1c"/>
+    <stop offset=".30" stop-color="#0d1b3b"/>
+    <stop offset=".55" stop-color="#1f3665"/>
+    <stop offset=".70" stop-color="#6d4f6a"/>
+    <stop offset=".80" stop-color="#d0804a"/>
+    <stop offset=".88" stop-color="#f0b45e"/>
+    <stop offset="1" stop-color="#f6cf84"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="800" cy="310" r="560" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ffd98f" stop-opacity=".62"/>
+    <stop offset=".35" stop-color="#e5a24f" stop-opacity=".22"/>
+    <stop offset="1" stop-color="#e5a24f" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="gold" x1="-200" y1="-80" x2="200" y2="120" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#f7e2a0"/>
+    <stop offset=".5" stop-color="#d4a444"/>
+    <stop offset="1" stop-color="#9a6b22"/>
+  </linearGradient>
+  <linearGradient id="shaftL" x1="-70" y1="0" x2="70" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#0c1630"/>
+    <stop offset=".45" stop-color="#3a3350"/>
+    <stop offset=".8" stop-color="#b9824e"/>
+    <stop offset="1" stop-color="#efbf74"/>
+  </linearGradient>
+  <linearGradient id="shaftR" x1="70" y1="0" x2="-70" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#0c1630"/>
+    <stop offset=".45" stop-color="#3a3350"/>
+    <stop offset=".8" stop-color="#b9824e"/>
+    <stop offset="1" stop-color="#efbf74"/>
+  </linearGradient>
+  <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4a3629"/>
+    <stop offset="1" stop-color="#1a120e"/>
+  </linearGradient>
+  <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3a3f6a"/>
+    <stop offset="1" stop-color="#b9714f"/>
+  </linearGradient>
+  <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1a2547"/>
+    <stop offset="1" stop-color="#5a3a40"/>
+  </linearGradient>
+  <pattern id="flutes" width="8" height="10" patternUnits="userSpaceOnUse">
+    <rect x="0" width="1.4" height="10" fill="#0a1530" opacity=".38"/>
+  </pattern>
+  
+<pattern id="immortals" width="30" height="64" patternUnits="userSpaceOnUse">
+  <g fill="#d2a85e" stroke="none">
+    <rect x="21.2" y="2" width="1.8" height="62"/>
+    <path d="M22.1 -2l-2.4 7h4.8z"/>
+    <rect x="9.5" y="4" width="7" height="9" rx="1.6"/>
+    <circle cx="13" cy="15" r="5.2"/>
+    <path d="M7 22Q13 19 19 22L21 64H5Z"/>
+    <path d="M3 26L7 24L9 46L4 44Z" opacity=".7"/>
+  </g>
+  <path d="M8 30Q13 33 18 30M7 40Q13 43 19 40M6 50Q13 53 20 50" stroke="#7a5a28" stroke-width="1" fill="none" opacity=".7"/>
+</pattern>
+<pattern id="rosband" width="24" height="24" patternUnits="userSpaceOnUse">
+  <g transform="translate(12 12)" fill="#d2a85e">
+    <ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(0)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(30)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(60)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(90)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(120)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(150)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(180)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(210)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(240)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(270)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(300)"/><ellipse cx="0" cy="-6.4" rx="2.1" ry="3.7" transform="rotate(330)"/>
+    <circle r="3" fill="#7a5a28"/>
+  </g>
+</pattern>
+
+  <g id="colL">
+  <rect x="-36" y="-12" width="72" height="12" fill="url(#shaftL)"/>
+  <ellipse cx="0" cy="-20" rx="31" ry="9" fill="url(#shaftL)"/>
+  <path d="M-27 -26C-27 -50 -21 -62 -21 -78H21C21 -62 27 -50 27 -26Z" fill="url(#shaftL)"/>
+  <rect x="-21" y="-526" width="42" height="448" fill="url(#shaftL)"/>
+  <rect x="-21" y="-526" width="42" height="448" fill="url(#flutes)"/>
+  <rect x="-25" y="-534" width="50" height="8" fill="url(#shaftL)"/>
+  <rect x="-23" y="-543" width="46" height="6" fill="url(#shaftL)"/>
+  <path d="M-22 -546C-32 -562 -32 -574 -27 -590H27C32 -574 32 -562 22 -546Z" fill="url(#shaftL)"/>
+  <path d="M-30 -562H30M-29 -572H29" stroke="#0a1530" stroke-opacity=".35" stroke-width="1.4"/>
+  <rect x="-44" y="-604" width="88" height="16" fill="url(#shaftL)"/>
+  <circle cx="-46" cy="-596" r="11" fill="url(#shaftL)"/>
+  <circle cx="46" cy="-596" r="11" fill="url(#shaftL)"/>
+  <circle cx="-46" cy="-596" r="5" fill="none" stroke="#0a1530" stroke-opacity=".5" stroke-width="2"/>
+  <circle cx="46" cy="-596" r="5" fill="none" stroke="#0a1530" stroke-opacity=".5" stroke-width="2"/>
+  <rect x="-24" y="-622" width="48" height="24" fill="url(#shaftL)"/>
+  <path d="M22 -596L22 -640Q30 -654 48 -656Q66 -656 78 -644Q84 -632 78 -622Q66 -616 54 -618L40 -600Z" fill="url(#shaftL)"/><path d="M52 -654Q40 -680 56 -692Q52 -676 64 -660Z" fill="url(#shaftL)"/><path d="M70 -650Q88 -662 94 -652Q84 -646 74 -642Z" fill="url(#shaftL)"/><circle cx="60" cy="-638" r="2.6" fill="#0a1530"/>
+  <path d="M-22 -596L-22 -640Q-30 -654 -48 -656Q-66 -656 -78 -644Q-84 -632 -78 -622Q-66 -616 -54 -618L-40 -600Z" fill="url(#shaftL)"/><path d="M-52 -654Q-40 -680 -56 -692Q-52 -676 -64 -660Z" fill="url(#shaftL)"/><path d="M-70 -650Q-88 -662 -94 -652Q-84 -646 -74 -642Z" fill="url(#shaftL)"/><circle cx="-60" cy="-638" r="2.6" fill="#0a1530"/></g>
+  <g id="colR">
+  <rect x="-36" y="-12" width="72" height="12" fill="url(#shaftR)"/>
+  <ellipse cx="0" cy="-20" rx="31" ry="9" fill="url(#shaftR)"/>
+  <path d="M-27 -26C-27 -50 -21 -62 -21 -78H21C21 -62 27 -50 27 -26Z" fill="url(#shaftR)"/>
+  <rect x="-21" y="-526" width="42" height="448" fill="url(#shaftR)"/>
+  <rect x="-21" y="-526" width="42" height="448" fill="url(#flutes)"/>
+  <rect x="-25" y="-534" width="50" height="8" fill="url(#shaftR)"/>
+  <rect x="-23" y="-543" width="46" height="6" fill="url(#shaftR)"/>
+  <path d="M-22 -546C-32 -562 -32 -574 -27 -590H27C32 -574 32 -562 22 -546Z" fill="url(#shaftR)"/>
+  <path d="M-30 -562H30M-29 -572H29" stroke="#0a1530" stroke-opacity=".35" stroke-width="1.4"/>
+  <rect x="-44" y="-604" width="88" height="16" fill="url(#shaftR)"/>
+  <circle cx="-46" cy="-596" r="11" fill="url(#shaftR)"/>
+  <circle cx="46" cy="-596" r="11" fill="url(#shaftR)"/>
+  <circle cx="-46" cy="-596" r="5" fill="none" stroke="#0a1530" stroke-opacity=".5" stroke-width="2"/>
+  <circle cx="46" cy="-596" r="5" fill="none" stroke="#0a1530" stroke-opacity=".5" stroke-width="2"/>
+  <rect x="-24" y="-622" width="48" height="24" fill="url(#shaftR)"/>
+  <path d="M22 -596L22 -640Q30 -654 48 -656Q66 -656 78 -644Q84 -632 78 -622Q66 -616 54 -618L40 -600Z" fill="url(#shaftR)"/><path d="M52 -654Q40 -680 56 -692Q52 -676 64 -660Z" fill="url(#shaftR)"/><path d="M70 -650Q88 -662 94 -652Q84 -646 74 -642Z" fill="url(#shaftR)"/><circle cx="60" cy="-638" r="2.6" fill="#0a1530"/>
+  <path d="M-22 -596L-22 -640Q-30 -654 -48 -656Q-66 -656 -78 -644Q-84 -632 -78 -622Q-66 -616 -54 -618L-40 -600Z" fill="url(#shaftR)"/><path d="M-52 -654Q-40 -680 -56 -692Q-52 -676 -64 -660Z" fill="url(#shaftR)"/><path d="M-70 -650Q-88 -662 -94 -652Q-84 -646 -74 -642Z" fill="url(#shaftR)"/><circle cx="-60" cy="-638" r="2.6" fill="#0a1530"/></g>
+  
+<g id="fv" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M34.4 10.5Q102.3 29.3 170.2 52" stroke="#0a1530" stroke-width="13"/>
+<path d="M34.4 10.5Q102.3 29.3 170.2 52" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M33.8 12.3Q97 33.3 160.2 58.3" stroke="#0a1530" stroke-width="13"/>
+<path d="M33.8 12.3Q97 33.3 160.2 58.3" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M33.1 14.1Q91.6 36.9 150 63.7" stroke="#0a1530" stroke-width="13"/>
+<path d="M33.1 14.1Q91.6 36.9 150 63.7" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M32.4 15.8Q86.1 40 139.8 68.2" stroke="#0a1530" stroke-width="13"/>
+<path d="M32.4 15.8Q86.1 40 139.8 68.2" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M31.5 17.5Q80.5 42.6 129.4 71.8" stroke="#0a1530" stroke-width="13"/>
+<path d="M31.5 17.5Q80.5 42.6 129.4 71.8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M36 -1.3Q131.9 -10.6 227.9 -8" stroke="#0a1530" stroke-width="13"/>
+<path d="M36 -1.3Q131.9 -10.6 227.9 -8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M36 0.5Q128.8 -4.2 221.6 3.1" stroke="#0a1530" stroke-width="13"/>
+<path d="M36 0.5Q128.8 -4.2 221.6 3.1" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M35.9 2.3Q125.4 1.9 214.8 13.5" stroke="#0a1530" stroke-width="13"/>
+<path d="M35.9 2.3Q125.4 1.9 214.8 13.5" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M35.8 4Q121.6 7.6 207.5 23.3" stroke="#0a1530" stroke-width="13"/>
+<path d="M35.8 4Q121.6 7.6 207.5 23.3" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M35.5 5.8Q117.7 13.1 199.8 32.4" stroke="#0a1530" stroke-width="13"/>
+<path d="M35.5 5.8Q117.7 13.1 199.8 32.4" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M35.2 7.5Q113.5 18.1 191.7 40.8" stroke="#0a1530" stroke-width="13"/>
+<path d="M35.2 7.5Q113.5 18.1 191.7 40.8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M32.1 -16.3Q131 -78.7 229.9 -117.1" stroke="#0a1530" stroke-width="13"/>
+<path d="M32.1 -16.3Q131 -78.7 229.9 -117.1" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M32.9 -14.5Q131.7 -70.2 230.5 -101.8" stroke="#0a1530" stroke-width="13"/>
+<path d="M32.9 -14.5Q131.7 -70.2 230.5 -101.8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M33.7 -12.7Q131.9 -61.8 230.2 -86.8" stroke="#0a1530" stroke-width="13"/>
+<path d="M33.7 -12.7Q131.9 -61.8 230.2 -86.8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M34.3 -10.8Q131.6 -53.5 228.9 -72.2" stroke="#0a1530" stroke-width="13"/>
+<path d="M34.3 -10.8Q131.6 -53.5 228.9 -72.2" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M34.9 -8.9Q130.8 -45.4 226.7 -57.9" stroke="#0a1530" stroke-width="13"/>
+<path d="M34.9 -8.9Q130.8 -45.4 226.7 -57.9" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M35.3 -7Q129.5 -37.6 223.7 -44.2" stroke="#0a1530" stroke-width="13"/>
+<path d="M35.3 -7Q129.5 -37.6 223.7 -44.2" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M35.6 -5Q127.7 -30 219.8 -30.9" stroke="#0a1530" stroke-width="13"/>
+<path d="M35.6 -5Q127.7 -30 219.8 -30.9" stroke="url(#gold)" stroke-width="8.5"/>
+  <path d="M-34.4 10.5Q-102.3 29.3 -170.2 52" stroke="#0a1530" stroke-width="13"/>
+<path d="M-34.4 10.5Q-102.3 29.3 -170.2 52" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-33.8 12.3Q-97 33.3 -160.2 58.3" stroke="#0a1530" stroke-width="13"/>
+<path d="M-33.8 12.3Q-97 33.3 -160.2 58.3" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-33.1 14.1Q-91.6 36.9 -150 63.7" stroke="#0a1530" stroke-width="13"/>
+<path d="M-33.1 14.1Q-91.6 36.9 -150 63.7" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-32.4 15.8Q-86.1 40 -139.8 68.2" stroke="#0a1530" stroke-width="13"/>
+<path d="M-32.4 15.8Q-86.1 40 -139.8 68.2" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-31.5 17.5Q-80.5 42.6 -129.4 71.8" stroke="#0a1530" stroke-width="13"/>
+<path d="M-31.5 17.5Q-80.5 42.6 -129.4 71.8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-36 -1.3Q-131.9 -10.6 -227.9 -8" stroke="#0a1530" stroke-width="13"/>
+<path d="M-36 -1.3Q-131.9 -10.6 -227.9 -8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-36 0.5Q-128.8 -4.2 -221.6 3.1" stroke="#0a1530" stroke-width="13"/>
+<path d="M-36 0.5Q-128.8 -4.2 -221.6 3.1" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-35.9 2.3Q-125.4 1.9 -214.8 13.5" stroke="#0a1530" stroke-width="13"/>
+<path d="M-35.9 2.3Q-125.4 1.9 -214.8 13.5" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-35.8 4Q-121.6 7.6 -207.5 23.3" stroke="#0a1530" stroke-width="13"/>
+<path d="M-35.8 4Q-121.6 7.6 -207.5 23.3" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-35.5 5.8Q-117.7 13.1 -199.8 32.4" stroke="#0a1530" stroke-width="13"/>
+<path d="M-35.5 5.8Q-117.7 13.1 -199.8 32.4" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-35.2 7.5Q-113.5 18.1 -191.7 40.8" stroke="#0a1530" stroke-width="13"/>
+<path d="M-35.2 7.5Q-113.5 18.1 -191.7 40.8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-32.1 -16.3Q-131 -78.7 -229.9 -117.1" stroke="#0a1530" stroke-width="13"/>
+<path d="M-32.1 -16.3Q-131 -78.7 -229.9 -117.1" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-32.9 -14.5Q-131.7 -70.2 -230.5 -101.8" stroke="#0a1530" stroke-width="13"/>
+<path d="M-32.9 -14.5Q-131.7 -70.2 -230.5 -101.8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-33.7 -12.7Q-131.9 -61.8 -230.2 -86.8" stroke="#0a1530" stroke-width="13"/>
+<path d="M-33.7 -12.7Q-131.9 -61.8 -230.2 -86.8" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-34.3 -10.8Q-131.6 -53.5 -228.9 -72.2" stroke="#0a1530" stroke-width="13"/>
+<path d="M-34.3 -10.8Q-131.6 -53.5 -228.9 -72.2" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-34.9 -8.9Q-130.8 -45.4 -226.7 -57.9" stroke="#0a1530" stroke-width="13"/>
+<path d="M-34.9 -8.9Q-130.8 -45.4 -226.7 -57.9" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-35.3 -7Q-129.5 -37.6 -223.7 -44.2" stroke="#0a1530" stroke-width="13"/>
+<path d="M-35.3 -7Q-129.5 -37.6 -223.7 -44.2" stroke="url(#gold)" stroke-width="8.5"/>
+<path d="M-35.6 -5Q-127.7 -30 -219.8 -30.9" stroke="#0a1530" stroke-width="13"/>
+<path d="M-35.6 -5Q-127.7 -30 -219.8 -30.9" stroke="url(#gold)" stroke-width="8.5"/>
+  <path d="M11.6 31.9L40.4 110.9" stroke="#0a1530" stroke-width="12"/>
+<path d="M11.6 31.9L40.4 110.9" stroke="url(#gold)" stroke-width="7.5"/>
+<path d="M5.9 33.5L20.5 116.2" stroke="#0a1530" stroke-width="12"/>
+<path d="M5.9 33.5L20.5 116.2" stroke="url(#gold)" stroke-width="7.5"/>
+<path d="M0 34L0 118" stroke="#0a1530" stroke-width="12"/>
+<path d="M0 34L0 118" stroke="url(#gold)" stroke-width="7.5"/>
+<path d="M-5.9 33.5L-20.5 116.2" stroke="#0a1530" stroke-width="12"/>
+<path d="M-5.9 33.5L-20.5 116.2" stroke="url(#gold)" stroke-width="7.5"/>
+<path d="M-11.6 31.9L-40.4 110.9" stroke="#0a1530" stroke-width="12"/>
+<path d="M-11.6 31.9L-40.4 110.9" stroke="url(#gold)" stroke-width="7.5"/>
+<path d="M5.9 33.5L27.4 155.6" stroke="#0a1530" stroke-width="12"/>
+<path d="M5.9 33.5L27.4 155.6" stroke="url(#gold)" stroke-width="7.5"/>
+<path d="M0 34L0 158" stroke="#0a1530" stroke-width="12"/>
+<path d="M0 34L0 158" stroke="url(#gold)" stroke-width="7.5"/>
+<path d="M-5.9 33.5L-27.4 155.6" stroke="#0a1530" stroke-width="12"/>
+<path d="M-5.9 33.5L-27.4 155.6" stroke="url(#gold)" stroke-width="7.5"/>
+  <path d="M27 22C60 44 50 88 80 112q11 7 13 -6" stroke="#0a1530" stroke-width="11"/><path d="M27 22C60 44 50 88 80 112q11 7 13 -6" stroke="url(#gold)" stroke-width="6"/>
+  <path d="M-27 22C-60 44 -50 88 -80 112q-11 7 -13 -6" stroke="#0a1530" stroke-width="11"/><path d="M-27 22C-60 44 -50 88 -80 112q-11 7 -13 -6" stroke="url(#gold)" stroke-width="6"/>
+  <!-- ring -->
+  <circle cx="0" cy="6" r="28" stroke="#0a1530" stroke-width="16"/>
+  <circle cx="0" cy="6" r="28" stroke="url(#gold)" stroke-width="10"/>
+  <!-- figure -->
+  <g stroke="#0a1530" stroke-width="2.4" fill="url(#gold)" transform="translate(0 4) scale(1.32) translate(0 -4)">
+    <path d="M-17 -6V-28Q-17 -36 -9 -36H9Q17 -36 17 -28V-6Z"/>
+    <path d="M17 -26L52 -40" stroke-width="9" stroke="#0a1530" fill="none"/>
+    <path d="M17 -26L52 -40" stroke-width="5" stroke="url(#gold)" fill="none"/>
+    <path d="M-17 -26L-50 -36" stroke-width="9" stroke="#0a1530" fill="none"/>
+    <path d="M-17 -26L-50 -36" stroke-width="5" stroke="url(#gold)" fill="none"/>
+    <circle cx="62" cy="-44" r="9" fill="none" stroke-width="3.2"/>
+    <rect x="-60" y="-52" width="7" height="17" rx="3.5" transform="rotate(-12 -56 -44)"/>
+    <circle cx="0" cy="-47" r="12.5"/>
+    <path d="M-8 -37Q0 -26 8 -37Q6 -30 0 -27Q-6 -30 -8 -37Z" fill="#c9993f" stroke-width="1.5"/>
+    <path d="M-10 -55Q-12 -76 0 -80Q12 -76 10 -55Z"/>
+  </g>
+</g>
+</defs>
+
+<rect width="1600" height="900" fill="url(#sky)"/>
+<g fill="#fff3d6"><circle cx="673" cy="87" r="1.6" opacity="0.25"/><circle cx="158" cy="284" r="0.8" opacity="0.55"/><circle cx="1203" cy="39" r="1" opacity="0.25"/><circle cx="186" cy="232" r="1.6" opacity="0.25"/><circle cx="502" cy="56" r="1.6" opacity="0.25"/><circle cx="1168" cy="73" r="1" opacity="0.25"/><circle cx="1191" cy="309" r="1.6" opacity="0.25"/><circle cx="462" cy="33" r="1" opacity="0.55"/><circle cx="868" cy="83" r="0.8" opacity="0.55"/><circle cx="1157" cy="102" r="0.8" opacity="0.4"/><circle cx="772" cy="59" r="0.8" opacity="0.25"/><circle cx="1277" cy="115" r="1.6" opacity="0.8"/><circle cx="653" cy="248" r="1.6" opacity="0.55"/><circle cx="623" cy="137" r="1" opacity="0.4"/><circle cx="177" cy="304" r="1.2" opacity="0.8"/><circle cx="713" cy="239" r="1.2" opacity="0.25"/><circle cx="251" cy="272" r="1.6" opacity="0.4"/><circle cx="1560" cy="185" r="1" opacity="0.8"/><circle cx="873" cy="30" r="0.8" opacity="0.55"/><circle cx="706" cy="189" r="1.6" opacity="0.8"/><circle cx="150" cy="57" r="1.2" opacity="0.8"/><circle cx="1437" cy="43" r="0.8" opacity="0.55"/><circle cx="1335" cy="305" r="1.6" opacity="0.55"/><circle cx="1477" cy="207" r="1.2" opacity="0.25"/><circle cx="955" cy="191" r="1" opacity="0.25"/><circle cx="1021" cy="40" r="1" opacity="0.55"/><circle cx="274" cy="136" r="1.6" opacity="0.8"/><circle cx="1026" cy="51" r="1" opacity="0.8"/><circle cx="832" cy="291" r="1.2" opacity="0.4"/><circle cx="891" cy="291" r="1.2" opacity="0.8"/><circle cx="744" cy="204" r="1" opacity="0.4"/><circle cx="179" cy="100" r="1" opacity="0.4"/><circle cx="1358" cy="129" r="0.8" opacity="0.8"/><circle cx="1216" cy="103" r="1.2" opacity="0.55"/><circle cx="18" cy="84" r="1.6" opacity="0.55"/><circle cx="1258" cy="299" r="1.2" opacity="0.4"/><circle cx="1424" cy="273" r="0.8" opacity="0.8"/><circle cx="1403" cy="296" r="1.6" opacity="0.8"/><circle cx="827" cy="211" r="0.8" opacity="0.8"/><circle cx="1309" cy="215" r="0.8" opacity="0.4"/><circle cx="147" cy="116" r="1.6" opacity="0.4"/><circle cx="235" cy="184" r="0.8" opacity="0.25"/><circle cx="10" cy="300" r="1" opacity="0.25"/><circle cx="754" cy="324" r="0.8" opacity="0.25"/><circle cx="435" cy="324" r="1.6" opacity="0.4"/><circle cx="1309" cy="139" r="1.2" opacity="0.55"/></g>
+<rect width="1600" height="900" fill="url(#halo)" class="hero-halo"/>
+
+<!-- halo rings -->
+<g fill="none" stroke="#e9c577" class="hero-rings">
+  <circle cx="800" cy="310" r="226" stroke-opacity=".28" stroke-width="1.4"/>
+  <circle cx="800" cy="310" r="236" stroke-opacity=".16" stroke-width="1" stroke-dasharray="2 9"/>
+</g>
+
+<!-- distant Kuh-e Rahmat -->
+<path d="M0 640L120 598L230 628L380 566L520 622L640 596L760 640L900 610L1040 650L1180 596L1330 636L1470 572L1600 622V780H0Z" fill="url(#far)" opacity=".9"/>
+<path d="M0 690L150 648L300 684L470 640L620 690L800 662L980 700L1150 650L1320 694L1480 654L1600 690V780H0Z" fill="url(#near)"/>
+
+<!-- back colonnade -->
+<use href="#colL" transform="translate(-20 752) scale(0.5)" opacity="0.55"/>
+<use href="#colL" transform="translate(96 752) scale(0.5)" opacity="0.55"/>
+<use href="#colL" transform="translate(250 752) scale(0.52)" opacity="0.55"/>
+<use href="#colR" transform="translate(1350 752) scale(0.52)" opacity="0.55"/>
+<use href="#colR" transform="translate(1504 752) scale(0.5)" opacity="0.55"/>
+<use href="#colR" transform="translate(1620 752) scale(0.5)" opacity="0.55"/>
+
+<!-- terrace -->
+<rect y="752" width="1600" height="148" fill="url(#wall)"/>
+<rect y="750" width="1600" height="4" fill="#e7bf72"/>
+<rect y="754" width="1600" height="2" fill="#7a5a28" opacity=".6"/>
+
+<!-- front colonnade -->
+<use href="#colL" transform="translate(150 770) scale(0.98)" opacity="1.0"/>
+<use href="#colL" transform="translate(372 770) scale(0.98)" opacity="1.0"/>
+<use href="#colR" transform="translate(1228 770) scale(0.98)" opacity="1.0"/>
+<use href="#colR" transform="translate(1450 770) scale(0.98)" opacity="1.0"/>
+
+<!-- Faravahar -->
+<g class="hero-fv"><g transform="translate(800 312) scale(.9)">
+  <use href="#fv"/>
+</g></g>
+
+<!-- Procession of the Immortals -->
+<rect y="772" width="1600" height="64" fill="url(#immortals)"/>
+<rect y="768" width="1600" height="2" fill="#d2a85e" opacity=".7"/>
+<rect y="838" width="1600" height="2" fill="#d2a85e" opacity=".7"/>
+<rect y="846" width="1600" height="24" fill="url(#rosband)" opacity=".85"/>
+</svg>
+    <div class="intro-content">
+      <div class="hero-copy">
+        <p class="hero-fa" lang="fa" dir="rtl">مجتبی توکل‌زاده</p>
+        <h1 class="hero-name">Mojtaba Tavakolzadeh</h1>
+        <p class="hero-role">Senior DevOps / Platform Engineer</p>
+        <p class="hero-line">Building reliable platforms, inspired by enduring foundations.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold js-scroll" href="#experience">See my experience</a>
+          <a class="btn btn-ghost" href="Mojtaba_Tavakolzadeh.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
       </div>
     </div>
@@ -105,7 +374,7 @@
                 <div class="row">
                   <div class="col-sm-6 col-md-5">
                     <div class="about-img">
-                      <img src="img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      <img src="img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="Portrait of Mojtaba Tavakolzadeh" width="1254" height="1254">
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
@@ -145,7 +414,7 @@
     </div>
   </section>
 
-  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+  <div class="section-counter paralax-mf">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -156,29 +425,18 @@
             </div>
             <div class="counter-num">
               <p class="counter plus">7</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
+              <span class="counter-text">Years of experience</span>
             </div>
           </div>
         </div>
         <div class="col-sm-3 col-lg-3">
           <div class="counter-box pt-4 pt-md-0">
             <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+              <span class="ico-circle"><i class="ion-briefcase"></i></span>
             </div>
             <div class="counter-num">
               <p class="counter">7</p>
-              <span class="counter-text">COMPANIES &amp; PROJECTS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">4</p>
-              <span class="counter-text">CERTIFICATES</span>
+              <span class="counter-text">Companies &amp; projects</span>
             </div>
           </div>
         </div>
@@ -188,8 +446,19 @@
               <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
             </div>
             <div class="counter-num">
+              <p class="counter">4</p>
+              <span class="counter-text">Certificates</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-document-text"></i></span>
+            </div>
+            <div class="counter-num">
               <p class="counter">3</p>
-              <span class="counter-text">TECHNICAL ARTICLES</span>
+              <span class="counter-text">Technical articles</span>
             </div>
           </div>
         </div>
@@ -595,7 +864,7 @@
   <!--/ Section Blog End /-->
 
   <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <section class="paralax-mf footer-paralax sect-mt4 route">
     <div class="overlay-mf"></div>
     <div class="container">
       <div class="row">
@@ -675,6 +944,7 @@
       </div>
     </div>
     <footer>
+      <p class="copyright">&copy; 2026 Mojtaba Tavakolzadeh</p>
     </footer>
   </section>
   <!--/ Section Contact-footer End /-->
