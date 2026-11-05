@@ -127,18 +127,27 @@ section { padding: 96px 0 84px !important; position: relative; }
   }
 }
 
+<<<<<<< HEAD
 /* ---------- hero ---------- */
+=======
+/* ---------- hero (photograph: Gate of All Nations at sunset) ---------- */
+>>>>>>> bf621d2 (Update)
 #home.intro {
   position: relative;
   height: 100vh;
   height: 100svh;
+<<<<<<< HEAD
   min-height: 700px;
+=======
+  min-height: 640px;
+>>>>>>> bf621d2 (Update)
   overflow: hidden;
   background: var(--lapis-950);
   color: var(--stone);
   border-bottom: 3px solid var(--gold);
 }
 #home .overlay-itro { display: none; }
+<<<<<<< HEAD
 .hero-art {
   position: absolute;
   inset: 0;
@@ -146,6 +155,32 @@ section { padding: 96px 0 84px !important; position: relative; }
   height: 100%;
   display: block;
 }
+=======
+
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  background-color: #0d1b3b;
+  background-image: url("../img/hero-persepolis.jpg");
+  background-image: image-set(url("../img/hero-persepolis.webp") type("image/webp"), url("../img/hero-persepolis.jpg") type("image/jpeg"));
+  background-size: cover;
+  background-position: 50% 62%;
+  background-repeat: no-repeat;
+  transform-origin: 50% 72%;
+  animation: gateSettle 3.4s cubic-bezier(.16, .7, .2, 1) both;
+}
+/* darkens the top for the nav, the centre behind the title, and melts into the page below */
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 34% 40% at 50% 34%, rgba(5, 11, 28, .62), rgba(5, 11, 28, 0) 100%),
+    linear-gradient(180deg, rgba(5, 11, 28, .62) 0, rgba(5, 11, 28, 0) 22%),
+    linear-gradient(0deg, rgba(5, 11, 28, .55) 0, rgba(5, 11, 28, 0) 24%);
+}
+
+>>>>>>> bf621d2 (Update)
 #home .intro-content {
   position: absolute;
   inset: 0;
@@ -156,6 +191,7 @@ section { padding: 96px 0 84px !important; position: relative; }
 .hero-copy {
   position: absolute;
   left: 50%;
+<<<<<<< HEAD
   top: 55%;
   transform: translateX(-50%);
   width: min(760px, 92vw);
@@ -193,12 +229,52 @@ section { padding: 96px 0 84px !important; position: relative; }
   letter-spacing: .05em;
   color: var(--gold-l);
   margin: 0 0 .55rem;
+=======
+  top: 19%;
+  transform: translateX(-50%);
+  width: min(620px, 92vw);
+  text-align: center;
+  pointer-events: auto;
+}
+.hero-fa {
+  font-family: var(--f-fa);
+  font-weight: 500;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  margin: 0 0 .5rem;
+  color: var(--gold-l);
+  letter-spacing: 0;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, .7);
+}
+.hero-name {
+  font-family: var(--f-display);
+  font-size: clamp(2.5rem, 4.6vw, 4.6rem);
+  line-height: 1.04;
+  letter-spacing: .05em;
+  color: #fff4dc;
+  margin: 0 0 .7rem;
+  text-shadow: 0 3px 30px rgba(0, 0, 0, .7), 0 1px 3px rgba(0, 0, 0, .55);
+}
+.hero-role {
+  font-family: var(--f-display);
+  font-size: clamp(1.05rem, 1.6vw, 1.4rem);
+  letter-spacing: .05em;
+  color: var(--gold-l);
+  margin: 0 0 .6rem;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .75);
+>>>>>>> bf621d2 (Update)
 }
 .hero-line {
   font-style: italic;
   font-size: 1.12rem;
+<<<<<<< HEAD
   color: #e5d9c0;
   margin: 0 0 1.5rem;
+=======
+  color: #f0e5cb;
+  margin: 0 0 1.5rem;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .8);
+>>>>>>> bf621d2 (Update)
 }
 .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
@@ -218,6 +294,7 @@ section { padding: 96px 0 84px !important; position: relative; }
 }
 .btn-gold:hover { background: linear-gradient(180deg, #f0cd7b, #d0a044); color: var(--lapis-950); }
 .btn-ghost {
+<<<<<<< HEAD
   background: rgba(5, 11, 28, .35);
   border: 1px solid rgba(236, 202, 120, .75);
   color: var(--gold-l);
@@ -255,6 +332,39 @@ section { padding: 96px 0 84px !important; position: relative; }
   .hero-name { font-size: clamp(2rem, 9.4vw, 3rem); letter-spacing: .03em; }
   .hero-line { display: none; }
   .hero-actions { margin-top: 1.1rem; }
+=======
+  background: rgba(5, 11, 28, .5);
+  border: 1px solid rgba(236, 202, 120, .8);
+  color: var(--gold-l);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+.btn-ghost:hover { background: rgba(236, 202, 120, .18); color: #fff3d0; border-color: var(--gold-l); }
+
+/* the one orchestrated moment: the camera settles into the gate */
+@keyframes gateSettle { from { transform: scale(1.09); filter: brightness(.55); } to { transform: none; filter: none; } }
+
+@media (max-height: 760px) and (min-width: 768px) {
+  .hero-line { display: none; }
+  .hero-copy { top: 17%; }
+}
+@media (max-width: 767.98px) {
+  #home.intro { min-height: 600px; }
+  .hero-photo {
+    background-image: url("../img/hero-persepolis-m.jpg");
+    background-image: image-set(url("../img/hero-persepolis-m.webp") type("image/webp"), url("../img/hero-persepolis-m.jpg") type("image/jpeg"));
+    background-position: 50% 100%;
+  }
+  .hero-scrim {
+    background:
+      radial-gradient(ellipse 80% 38% at 50% 30%, rgba(5, 11, 28, .6), rgba(5, 11, 28, 0) 100%),
+      linear-gradient(180deg, rgba(5, 11, 28, .7) 0, rgba(5, 11, 28, 0) 28%),
+      linear-gradient(0deg, rgba(5, 11, 28, .5) 0, rgba(5, 11, 28, 0) 20%);
+  }
+  .hero-copy { top: 17%; width: 90vw; }
+  .hero-name { font-size: clamp(2.3rem, 11vw, 3.3rem); letter-spacing: .035em; }
+  .hero-line { display: none; }
+>>>>>>> bf621d2 (Update)
   .btn-gold, .btn-ghost { padding: .66rem 1.25rem; }
 }
 
@@ -670,6 +780,10 @@ footer .copyright { margin: 0; font-size: 1rem; letter-spacing: .02em; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+<<<<<<< HEAD
   .hero-fv, .hero-halo, .hero-rings { animation: none; }
+=======
+  .hero-photo { animation: none; }
+>>>>>>> bf621d2 (Update)
   * { transition-duration: .01ms !important; }
 }
