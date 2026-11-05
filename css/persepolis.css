@@ -128,25 +128,34 @@ section { padding: 96px 0 84px !important; position: relative; }
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* ---------- hero ---------- */
 =======
 /* ---------- hero (photograph: Gate of All Nations at sunset) ---------- */
 >>>>>>> bf621d2 (Update)
+=======
+/* ---------- hero (photograph: Gate of All Nations at sunset) ---------- */
+>>>>>>> 37091bb (Update)
 #home.intro {
   position: relative;
   height: 100vh;
   height: 100svh;
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: 700px;
 =======
   min-height: 640px;
 >>>>>>> bf621d2 (Update)
+=======
+  min-height: 640px;
+>>>>>>> 37091bb (Update)
   overflow: hidden;
   background: var(--lapis-950);
   color: var(--stone);
   border-bottom: 3px solid var(--gold);
 }
 #home .overlay-itro { display: none; }
+<<<<<<< HEAD
 <<<<<<< HEAD
 .hero-art {
   position: absolute;
@@ -156,6 +165,8 @@ section { padding: 96px 0 84px !important; position: relative; }
   display: block;
 }
 =======
+=======
+>>>>>>> 37091bb (Update)
 
 .hero-photo {
   position: absolute;
@@ -180,7 +191,10 @@ section { padding: 96px 0 84px !important; position: relative; }
     linear-gradient(0deg, rgba(5, 11, 28, .55) 0, rgba(5, 11, 28, 0) 24%);
 }
 
+<<<<<<< HEAD
 >>>>>>> bf621d2 (Update)
+=======
+>>>>>>> 37091bb (Update)
 #home .intro-content {
   position: absolute;
   inset: 0;
@@ -191,6 +205,7 @@ section { padding: 96px 0 84px !important; position: relative; }
 .hero-copy {
   position: absolute;
   left: 50%;
+<<<<<<< HEAD
 <<<<<<< HEAD
   top: 55%;
   transform: translateX(-50%);
@@ -230,6 +245,8 @@ section { padding: 96px 0 84px !important; position: relative; }
   color: var(--gold-l);
   margin: 0 0 .55rem;
 =======
+=======
+>>>>>>> 37091bb (Update)
   top: 19%;
   transform: translateX(-50%);
   width: min(620px, 92vw);
@@ -262,11 +279,15 @@ section { padding: 96px 0 84px !important; position: relative; }
   color: var(--gold-l);
   margin: 0 0 .6rem;
   text-shadow: 0 2px 14px rgba(0, 0, 0, .75);
+<<<<<<< HEAD
 >>>>>>> bf621d2 (Update)
+=======
+>>>>>>> 37091bb (Update)
 }
 .hero-line {
   font-style: italic;
   font-size: 1.12rem;
+<<<<<<< HEAD
 <<<<<<< HEAD
   color: #e5d9c0;
   margin: 0 0 1.5rem;
@@ -275,6 +296,11 @@ section { padding: 96px 0 84px !important; position: relative; }
   margin: 0 0 1.5rem;
   text-shadow: 0 2px 14px rgba(0, 0, 0, .8);
 >>>>>>> bf621d2 (Update)
+=======
+  color: #f0e5cb;
+  margin: 0 0 1.5rem;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .8);
+>>>>>>> 37091bb (Update)
 }
 .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
@@ -294,6 +320,7 @@ section { padding: 96px 0 84px !important; position: relative; }
 }
 .btn-gold:hover { background: linear-gradient(180deg, #f0cd7b, #d0a044); color: var(--lapis-950); }
 .btn-ghost {
+<<<<<<< HEAD
 <<<<<<< HEAD
   background: rgba(5, 11, 28, .35);
   border: 1px solid rgba(236, 202, 120, .75);
@@ -333,6 +360,8 @@ section { padding: 96px 0 84px !important; position: relative; }
   .hero-line { display: none; }
   .hero-actions { margin-top: 1.1rem; }
 =======
+=======
+>>>>>>> 37091bb (Update)
   background: rgba(5, 11, 28, .5);
   border: 1px solid rgba(236, 202, 120, .8);
   color: var(--gold-l);
@@ -364,7 +393,10 @@ section { padding: 96px 0 84px !important; position: relative; }
   .hero-copy { top: 17%; width: 90vw; }
   .hero-name { font-size: clamp(2.3rem, 11vw, 3.3rem); letter-spacing: .035em; }
   .hero-line { display: none; }
+<<<<<<< HEAD
 >>>>>>> bf621d2 (Update)
+=======
+>>>>>>> 37091bb (Update)
   .btn-gold, .btn-ghost { padding: .66rem 1.25rem; }
 }
 
@@ -781,9 +813,13 @@ footer .copyright { margin: 0; font-size: 1rem; letter-spacing: .02em; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .hero-fv, .hero-halo, .hero-rings { animation: none; }
 =======
   .hero-photo { animation: none; }
 >>>>>>> bf621d2 (Update)
+=======
+  .hero-photo { animation: none; }
+>>>>>>> 37091bb (Update)
   * { transition-duration: .01ms !important; }
 }
