@@ -1,0 +1,11 @@
+--- a/index.html
++++ b/index.html
+@@ -38,7 +38,7 @@
+ 
+   <!-- Main Stylesheet File -->
+   <link href="css/style.css?v=2" rel="stylesheet">
+-  <link href="css/custom.css?v=3" rel="stylesheet">
++  <link href="css/custom.css?v=4" rel="stylesheet">
+ 
+ </head>
+ 
