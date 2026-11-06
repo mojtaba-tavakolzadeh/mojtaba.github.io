@@ -77,6 +77,9 @@
             <a class="nav-link js-scroll" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll" href="#skills">Working Tools</a>
           </li>
           <li class="nav-item">
@@ -95,14 +98,28 @@
   <div id="home" class="intro route">
     <div class="hero-photo" role="img" aria-label="Sunset through the Gate of All Nations at Persepolis, framed by two lamassu guardians"></div>
     <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="hero-ornament hero-ornament-left" aria-hidden="true">𓃭</div>
+    <div class="hero-ornament hero-ornament-right" aria-hidden="true">✺</div>
     <div class="intro-content">
       <div class="hero-copy">
+        <div class="hero-eyebrow"><span class="hero-eyebrow-line"></span> ENGINEERING • AUTOMATION • INNOVATION</div>
         <p class="hero-fa" lang="fa" dir="rtl">مجتبی توکل‌زاده</p>
+        <h1 class="hero-title">Building reliable platforms<br><span>for ambitious ideas.</span></h1>
+        <p class="hero-description">Senior DevOps &amp; Platform Engineer focused on Kubernetes, cloud-native infrastructure, GitOps and secure automation.</p>
+        <div class="hero-role"><span class="hero-role-label">I design &amp; build</span><span class="text-slider"></span><span class="text-slider-items" aria-hidden="true">Platform Engineering,Kubernetes Platforms,DevSecOps &amp; GitOps,Cloud-Native Infrastructure</span></div>
         <div class="hero-actions">
-          <a class="btn btn-gold js-scroll" href="#experience">See my experience</a>
-          <a class="btn btn-ghost" href="Mojtaba_Tavakolzadeh.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn btn-gold js-scroll" href="#projects"><i class="fa fa-rocket"></i> Explore my projects</a>
+          <a class="btn btn-ghost js-scroll" href="#experience">Professional journey</a>
+          <a class="hero-cv-link" href="Mojtaba_Tavakolzadeh.pdf" target="_blank" rel="noopener"><i class="fa fa-download"></i> Download CV</a>
         </div>
+        <div class="hero-metrics">
+          <div><strong>7<span>+</span></strong><small>Years of experience</small></div>
+          <div><strong>30<span>%</span></strong><small>Infrastructure cost reduction</small></div>
+          <div><strong>24<span>/7</span></strong><small>Production mindset</small></div>
+        </div>
+        <div class="hero-social-proof"><span class="status-dot"></span> Open to meaningful engineering challenges</div>
       </div>
+      <a class="hero-scroll js-scroll" href="#about" aria-label="Scroll to introduction"><span></span> SCROLL TO EXPLORE</a>
     </div>
   </div>
   <!--/ Intro Skew End /-->
@@ -111,7 +128,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="box-shadow-full">
+          <div class="box-shadow-full" data-reveal>
             <div class="row">
               <div class="col-md-6">
                 <div class="row">
@@ -208,6 +225,46 @@
       </div>
     </div>
   </div>
+
+  <!--/ Section Projects Star /-->
+  <section id="projects" class="projects-mf sect-pt4 route">
+    <div class="container">
+      <div class="title-box text-center" data-reveal>
+        <span class="section-kicker">SELECTED WORK / ۰۱</span>
+        <h3 class="title-a">Featured Projects</h3>
+        <p class="subtitle-a">Engineering ideas into dependable, production-ready systems.</p>
+        <div class="line-mf"></div>
+      </div>
+      <div class="row project-grid">
+        <div class="col-md-6 col-lg-4 d-flex" data-reveal>
+          <article class="project-card w-100">
+            <div class="project-visual"><img src="img/kubernetes.png" alt="Kubernetes platform" loading="lazy"><span class="project-index">01</span><span class="project-type">PLATFORM ENGINEERING</span></div>
+            <div class="project-body"><h4>Kubernetes Platform Engineering</h4><p>Production-grade Kubernetes environments with automated provisioning, GitOps workflows, high availability and operational standards.</p><div class="project-tags"><span>Kubernetes</span><span>Helm</span><span>Argo CD</span><span>Ansible</span></div><a href="https://github.com/mojtaba-tavakolzadeh" target="_blank" rel="noopener" class="project-link">Explore repositories <i class="fa fa-arrow-up"></i></a></div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex" data-reveal>
+          <article class="project-card w-100">
+            <div class="project-visual"><img src="img/cicd-terms.png" alt="CI/CD automation" loading="lazy"><span class="project-index">02</span><span class="project-type">DELIVERY AUTOMATION</span></div>
+            <div class="project-body"><h4>CI/CD &amp; GitOps Ecosystem</h4><p>Reusable delivery pipelines, deployment automation and release practices designed to improve speed, consistency and reliability.</p><div class="project-tags"><span>GitLab CI</span><span>GitHub Actions</span><span>Docker</span><span>GitOps</span></div><a href="https://github.com/mojtaba-tavakolzadeh" target="_blank" rel="noopener" class="project-link">Explore repositories <i class="fa fa-arrow-up"></i></a></div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex" data-reveal>
+          <article class="project-card w-100">
+            <div class="project-visual"><img src="img/grafana.png" alt="Observability stack" loading="lazy"><span class="project-index">03</span><span class="project-type">OBSERVABILITY</span></div>
+            <div class="project-body"><h4>Observability &amp; Reliability</h4><p>Centralized metrics, logging, tracing and alerting to improve service visibility and reduce mean time to resolution.</p><div class="project-tags"><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Jaeger</span></div><a href="https://github.com/mojtaba-tavakolzadeh" target="_blank" rel="noopener" class="project-link">Explore repositories <i class="fa fa-arrow-up"></i></a></div>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex" data-reveal>
+          <article class="project-card w-100">
+            <div class="project-visual project-visual-brand"><img src="img/logo-carpet.svg" alt="Online marketplace brand" loading="lazy"><span class="project-index">04</span><span class="project-type">DIGITAL COMMERCE</span></div>
+            <div class="project-body"><h4>Self-hosted Odoo Marketplace</h4><p>End-to-end architecture and operations for an online carpet marketplace, from containerized deployment to monitoring and backups.</p><div class="project-tags"><span>Odoo</span><span>Docker</span><span>Linux</span><span>CI/CD</span></div><a href="https://github.com/mojtaba-tavakolzadeh" target="_blank" rel="noopener" class="project-link">Explore repositories <i class="fa fa-arrow-up"></i></a></div>
+          </article>
+        </div>
+      </div>
+      <div class="projects-footnote" data-reveal><span class="iranian-rosette">✺</span> A selection of engineering work, platforms and initiatives across my professional journey.</div>
+    </div>
+  </section>
+  <!--/ Section Projects End /-->
 
   <!--/ Section Experience Star /-->
   <section id="experience" class="portfolio-mf sect-pt4 route">
@@ -694,6 +751,25 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
+
+  <script>
+    (function () {
+      var revealItems = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window)) {
+        revealItems.forEach(function (item) { item.classList.add('is-visible'); });
+        return;
+      }
+      var revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -35px 0px' });
+      revealItems.forEach(function (item) { revealObserver.observe(item); });
+    })();
+  </script>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
