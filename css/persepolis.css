@@ -902,3 +902,51 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion:reduce) {
  .architecture-mf *, .journey-mf * { animation:none!important; transition:none!important; }
 }
+
+
+/* Journey readability refinement */
+.journey-intro p {
+  color: #35465b;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.journey-year {
+  color: #815b18;
+  font-size: 11px;
+  font-weight: 800;
+}
+.journey-heading b {
+  color: #14263d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+.journey-heading small {
+  color: #4c5d72;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.journey-detail {
+  background: #f7f4ec;
+}
+.journey-detail p {
+  color: #34465b;
+  font-size: 13px;
+  line-height: 1.95;
+}
+.journey-detail .architecture-stack span {
+  color: #694d1e;
+  background: #fffaf0;
+  border-color: #e6d4ad;
+  font-size: 11px;
+  font-weight: 600;
+}
+.journey-note {
+  color: #526176;
+  font-size: 12px;
+}
+@media (max-width: 767px) {
+  .journey-heading b { font-size: 15px; }
+  .journey-heading small { font-size: 11px; }
+  .journey-detail p { font-size: 12px; }
+}
