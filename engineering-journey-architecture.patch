@@ -1,0 +1,296 @@
+diff --git a/css/persepolis.css b/css/persepolis.css
+index a5bcdec..4fbeabb 100644
+--- a/css/persepolis.css
++++ b/css/persepolis.css
+@@ -817,3 +817,88 @@ html { scroll-behavior: smooth; }
+     padding-right: 10px;
+   }
+ }
++
++
++/* Engineering showcase and interactive career timeline */
++.architecture-mf { position:relative; padding:82px 0 88px; background:linear-gradient(180deg,#101d30 0%,#142940 100%); color:#eef3f5; overflow:hidden; }
++.architecture-mf:before { content:"✺"; position:absolute; right:-30px; top:55px; color:rgba(226,184,101,.07); font-size:260px; line-height:1; pointer-events:none; }
++.architecture-mf .title-a { color:#fff; }
++.architecture-mf .subtitle-a { color:rgba(238,243,245,.68); }
++.architecture-mf .line-mf { background:#d5a84e; }
++.architecture-shell { position:relative; z-index:1; margin-top:38px; padding:22px; border:1px solid rgba(226,184,101,.22); border-radius:18px; background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025)); box-shadow:0 25px 70px rgba(0,0,0,.22); backdrop-filter:blur(12px); }
++.architecture-tabs { display:flex; flex-wrap:wrap; gap:9px; padding-bottom:20px; border-bottom:1px solid rgba(255,255,255,.12); }
++.architecture-tab { border:1px solid rgba(255,255,255,.16); border-radius:30px; padding:10px 17px; color:#c8d2dc; background:rgba(255,255,255,.035); font-size:11px; letter-spacing:.3px; cursor:pointer; transition:all .25s ease; }
++.architecture-tab:hover,.architecture-tab.is-active { color:#17263a; background:linear-gradient(135deg,#f0d18a,#c89432); border-color:#f0d18a; box-shadow:0 7px 22px rgba(200,148,50,.18); }
++.architecture-panel { display:grid; grid-template-columns:minmax(230px,.8fr) minmax(360px,1.2fr); gap:38px; align-items:center; padding:32px 12px 22px; animation:architecture-enter .45s ease both; }
++.architecture-panel[hidden] { display:none; }
++@keyframes architecture-enter { from {opacity:0;transform:translateY(10px)} to {opacity:1;transform:translateY(0)} }
++.architecture-label { color:#e2b865; font-size:9px; font-weight:700; letter-spacing:2px; }
++.architecture-copy h4 { color:#fff; font-family:'Marcellus',serif; font-size:clamp(23px,2.7vw,34px); line-height:1.25; margin:13px 0 15px; }
++.architecture-copy p { max-width:440px; color:#c3ced8; font-size:13px; line-height:1.95; margin-bottom:22px; }
++.architecture-stack { display:flex; flex-wrap:wrap; gap:7px; }
++.architecture-stack span { padding:6px 10px; border:1px solid rgba(215,177,101,.28); border-radius:20px; color:#e7d3a8; background:rgba(215,177,101,.07); font-size:10px; }
++.architecture-diagram { min-height:360px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:22px; border:1px solid rgba(255,255,255,.1); border-radius:14px; background:radial-gradient(ellipse at 50% 0%,rgba(71,126,153,.2),transparent 68%),rgba(5,14,25,.32); }
++.arch-node { min-width:145px; padding:13px 16px; border:1px solid rgba(125,190,190,.36); border-radius:9px; text-align:center; background:linear-gradient(135deg,rgba(29,91,100,.52),rgba(25,49,69,.85)); box-shadow:0 8px 24px rgba(0,0,0,.13); transition:transform .25s ease,border-color .25s ease; }
++.arch-node:hover,.arch-flow-node:hover { transform:translateY(-4px); border-color:#e2b865; }
++.arch-node b,.arch-flow-node b { display:block; color:#fff; font-size:12px; }
++.arch-node small,.arch-flow-node small { display:block; color:#aebfca; font-size:9px; margin-top:5px; }
++.arch-node-core { min-width:240px; border-color:rgba(226,184,101,.55); background:linear-gradient(135deg,rgba(142,103,42,.38),rgba(25,49,69,.92)); }
++.arch-node-workloads { min-width:240px; background:linear-gradient(135deg,rgba(35,112,88,.4),rgba(25,49,69,.92)); }
++.arch-node-source { min-width:240px; }
++.arch-connector { color:#e2b865; font-size:19px; line-height:1.5; animation:connector-glow 2.4s ease-in-out infinite; }
++@keyframes connector-glow { 0%,100% {opacity:.45;transform:translateY(0)} 50% {opacity:1;transform:translateY(3px)} }
++.arch-node-row,.arch-signal-row { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
++.arch-node-row .arch-node { min-width:160px; }
++.arch-flow { flex-direction:row; flex-wrap:wrap; gap:12px; align-content:center; }
++.arch-flow-node { flex:1 1 105px; min-height:112px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid rgba(125,190,190,.32); border-radius:10px; background:linear-gradient(145deg,rgba(29,91,100,.48),rgba(25,49,69,.9)); transition:transform .25s ease,border-color .25s ease; }
++.arch-flow-node i { display:grid; place-items:center; width:26px; height:26px; margin-bottom:10px; border-radius:50%; color:#17263a; background:#e2b865; font-size:9px; font-style:normal; font-weight:700; }
++.arch-flow-arrow { color:#e2b865; font-size:20px; }
++.architecture-flow .architecture-stack { justify-content:center; }
++.architecture-flow .arch-flow-outcome { flex-basis:100%; margin-top:16px; padding:13px; border-top:1px solid rgba(255,255,255,.12); color:#d7c08e; text-align:center; font-size:10px; letter-spacing:.5px; }
++.arch-signal-row .arch-node { min-width:105px; }
++.architecture-footer { display:flex; align-items:center; gap:9px; padding:16px 12px 0; border-top:1px solid rgba(255,255,255,.1); color:#9eacb9; font-size:10px; }
++.architecture-pulse { width:7px; height:7px; flex:0 0 7px; border-radius:50%; background:#72d6a5; box-shadow:0 0 0 5px rgba(114,214,165,.12); animation:status-pulse 2s infinite; }
++@keyframes status-pulse { 50% {box-shadow:0 0 0 9px rgba(114,214,165,0)} }
++.journey-mf { position:relative; padding:82px 0 90px; background:linear-gradient(180deg,#f8f5ed,#fff 78%); overflow:hidden; }
++.journey-mf:after { content:"𐎠"; position:absolute; left:-25px; bottom:30px; color:rgba(179,137,59,.055); font-size:250px; pointer-events:none; }
++.journey-intro { display:flex; align-items:center; justify-content:center; gap:16px; max-width:720px; margin:0 auto 42px; padding:18px 24px; border:1px solid rgba(181,137,57,.18); border-radius:12px; background:#fff; box-shadow:0 12px 35px rgba(25,38,54,.045); }
++.journey-emblem { color:#bc8c37; font-size:30px; }
++.journey-intro p { margin:0; color:#627083; font-size:12px; line-height:1.8; }
++.journey-timeline { position:relative; max-width:900px; margin:0 auto; padding:4px 0; }
++.journey-timeline:before { content:""; position:absolute; top:0; bottom:0; left:178px; width:1px; background:linear-gradient(180deg,transparent,#d9bd82 5%,#d9bd82 95%,transparent); }
++.journey-item { position:relative; margin:0 0 14px; padding:0; border:1px solid #e9e5dc; border-radius:11px; background:rgba(255,255,255,.88); box-shadow:0 8px 25px rgba(25,38,54,.035); transition:box-shadow .3s ease,border-color .3s ease,transform .3s ease; }
++.journey-item:hover,.journey-item[open] { border-color:rgba(191,145,60,.45); box-shadow:0 14px 35px rgba(25,38,54,.08); }
++.journey-item summary { position:relative; display:grid; grid-template-columns:145px 18px minmax(0,1fr) 22px; align-items:center; gap:18px; min-height:84px; padding:16px 22px 16px 20px; list-style:none; cursor:pointer; }
++.journey-item summary::-webkit-details-marker { display:none; }
++.journey-year { color:#a77b2e; font-size:10px; font-weight:700; letter-spacing:1px; text-align:right; }
++.journey-marker { position:relative; z-index:1; width:12px; height:12px; border:3px solid #fff; border-radius:50%; background:#c49542; box-shadow:0 0 0 2px #d8bd86; }
++.journey-heading b { display:block; color:#1c2c40; font-size:14px; }
++.journey-heading small { display:block; margin-top:5px; color:#788493; font-size:10px; line-height:1.7; }
++.journey-toggle { display:grid; place-items:center; width:22px; height:22px; border:1px solid #e4d7bd; border-radius:50%; color:#a77b2e; font-size:16px; transition:transform .25s ease,background .25s ease; }
++.journey-item[open] .journey-toggle { transform:rotate(45deg); color:#fff; background:#b98b3b; }
++.journey-detail { margin:0 22px 20px 201px; padding:16px 18px; border-left:2px solid #d5b36e; background:#faf8f2; animation:architecture-enter .35s ease both; }
++.journey-detail p { margin:0 0 13px; color:#667486; font-size:11px; line-height:1.9; }
++.journey-note { margin:24px 0 0; color:#8b929b; text-align:center; font-size:10px; }
++@media (max-width:767px) {
++ .architecture-mf,.journey-mf { padding:62px 0; }
++ .architecture-shell { padding:13px; }
++ .architecture-tabs { gap:6px; }
++ .architecture-tab { flex:1 1 auto; padding:9px 10px; font-size:9px; }
++ .architecture-panel { grid-template-columns:1fr; gap:22px; padding:25px 4px 18px; }
++ .architecture-diagram { min-height:300px; padding:15px 9px; }
++ .arch-node-row .arch-node { min-width:125px; }
++ .arch-flow { gap:8px; }
++ .arch-flow-arrow { display:none; }
++ .arch-flow-node { flex-basis:42%; }
++ .journey-intro { align-items:flex-start; padding:15px; }
++ .journey-timeline:before { left:8px; }
++ .journey-item summary { grid-template-columns:14px minmax(0,1fr) 22px; gap:12px; min-height:76px; padding:14px 12px; }
++ .journey-year { grid-column:2; grid-row:1; text-align:left; }
++ .journey-marker { grid-column:1; grid-row:1 / span 2; }
++ .journey-heading { grid-column:2; grid-row:2; }
++ .journey-toggle { grid-column:3; grid-row:1 / span 2; }
++ .journey-detail { margin:0 12px 14px 38px; padding:13px; }
++}
++@media (prefers-reduced-motion:reduce) {
++ .architecture-mf *, .journey-mf * { animation:none!important; transition:none!important; }
++}
+diff --git a/index.html b/index.html
+index 7e5bbaf..9bfb41f 100644
+--- a/index.html
++++ b/index.html
+@@ -49,7 +49,7 @@
+ 
+   <!-- Main Stylesheet File -->
+   <link href="css/style.css?v=2" rel="stylesheet">
+-  <link href="css/persepolis.css?v=3" rel="stylesheet">
++  <link href="css/persepolis.css?v=4" rel="stylesheet">
+ 
+ </head>
+ 
+@@ -76,9 +76,15 @@
+           <li class="nav-item">
+             <a class="nav-link js-scroll" href="#experience">Experience</a>
+           </li>
++          <li class="nav-item">
++            <a class="nav-link js-scroll" href="#journey">Journey</a>
++          </li>
+           <li class="nav-item">
+             <a class="nav-link js-scroll" href="#projects">Projects</a>
+           </li>
++          <li class="nav-item">
++            <a class="nav-link js-scroll" href="#architecture">Architecture</a>
++          </li>
+           <li class="nav-item">
+             <a class="nav-link js-scroll" href="#skills">Working Tools</a>
+           </li>
+@@ -265,6 +271,75 @@
+   </section>
+   <!--/ Section Projects End /-->
+ 
++  <!--/ Architecture & Engineering Showcase /-->
++  <section id="architecture" class="architecture-mf sect-pt4 route">
++    <div class="container">
++      <div class="title-box text-center" data-reveal>
++        <span class="section-kicker">SYSTEM DESIGN / ۰۲</span>
++        <h3 class="title-a">Architecture &amp; Engineering Showcase</h3>
++        <p class="subtitle-a">A closer look at the engineering patterns behind reliable platforms.</p>
++        <div class="line-mf"></div>
++      </div>
++      <div class="architecture-shell" data-reveal>
++        <div class="architecture-tabs" role="tablist" aria-label="Architecture examples">
++          <button class="architecture-tab is-active" type="button" role="tab" id="arch-tab-platform" aria-controls="arch-panel-platform" aria-selected="true" data-architecture="platform">01 · Platform</button>
++          <button class="architecture-tab" type="button" role="tab" id="arch-tab-delivery" aria-controls="arch-panel-delivery" aria-selected="false" data-architecture="delivery">02 · Delivery</button>
++          <button class="architecture-tab" type="button" role="tab" id="arch-tab-observability" aria-controls="arch-panel-observability" aria-selected="false" data-architecture="observability">03 · Observability</button>
++        </div>
++        <div class="architecture-panel is-active" id="arch-panel-platform" role="tabpanel" aria-labelledby="arch-tab-platform" data-architecture-panel="platform">
++          <div class="architecture-copy">
++            <span class="architecture-label">CLOUD-NATIVE FOUNDATION</span>
++            <h4>Kubernetes Platform Engineering</h4>
++            <p>A layered platform approach: infrastructure provisioning, cluster services, GitOps-based application delivery and secure workloads.</p>
++            <div class="architecture-stack"><span>Kubernetes</span><span>Helm</span><span>Argo CD</span><span>Ansible</span><span>Ingress</span><span>Secrets</span></div>
++          </div>
++          <div class="architecture-diagram" aria-label="Platform architecture flow diagram">
++            <div class="arch-node arch-node-source"><b>Infrastructure</b><small>Compute · Network · Storage</small></div>
++            <span class="arch-connector">↓</span>
++            <div class="arch-node arch-node-core"><b>Kubernetes</b><small>Clusters · Policies · Networking</small></div>
++            <span class="arch-connector">↓</span>
++            <div class="arch-node-row"><div class="arch-node"><b>Platform Services</b><small>Ingress · Secrets · DNS</small></div><div class="arch-node"><b>GitOps</b><small>Argo CD · Helm</small></div></div>
++            <span class="arch-connector">↓</span>
++            <div class="arch-node arch-node-workloads"><b>Production Workloads</b><small>Resilient · Observable · Secure</small></div>
++          </div>
++        </div>
++        <div class="architecture-panel" id="arch-panel-delivery" role="tabpanel" aria-labelledby="arch-tab-delivery" data-architecture-panel="delivery" hidden>
++          <div class="architecture-copy">
++            <span class="architecture-label">AUTOMATED SOFTWARE DELIVERY</span>
++            <h4>CI/CD &amp; GitOps Delivery Flow</h4>
++            <p>Consistent delivery from source control to production through automated validation, container builds, security checks and declarative deployment.</p>
++            <div class="architecture-stack"><span>GitLab CI</span><span>GitHub Actions</span><span>Docker</span><span>Container Registry</span><span>Argo CD</span></div>
++          </div>
++          <div class="architecture-diagram architecture-flow" aria-label="Continuous delivery flow diagram">
++            <div class="arch-flow-node"><i>01</i><b>Commit</b><small>Source control</small></div><span class="arch-flow-arrow">→</span>
++            <div class="arch-flow-node"><i>02</i><b>Build &amp; Test</b><small>CI pipeline</small></div><span class="arch-flow-arrow">→</span>
++            <div class="arch-flow-node"><i>03</i><b>Secure</b><small>Quality gates</small></div><span class="arch-flow-arrow">→</span>
++            <div class="arch-flow-node"><i>04</i><b>Deploy</b><small>GitOps sync</small></div>
++            <div class="arch-flow-outcome">Repeatable releases · Auditable changes · Safer rollbacks</div>
++          </div>
++        </div>
++        <div class="architecture-panel" id="arch-panel-observability" role="tabpanel" aria-labelledby="arch-tab-observability" data-architecture-panel="observability" hidden>
++          <div class="architecture-copy">
++            <span class="architecture-label">OPERATIONS &amp; RELIABILITY</span>
++            <h4>Observability &amp; Reliability</h4>
++            <p>Bring metrics, logs and traces together to understand system health, detect anomalies and support faster, evidence-based incident response.</p>
++            <div class="architecture-stack"><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Jaeger</span><span>Alerting</span></div>
++          </div>
++          <div class="architecture-diagram" aria-label="Observability signal flow diagram">
++            <div class="arch-signal-row"><div class="arch-node"><b>Metrics</b><small>Prometheus</small></div><div class="arch-node"><b>Logs</b><small>Loki</small></div><div class="arch-node"><b>Traces</b><small>Jaeger</small></div></div>
++            <span class="arch-connector">↓</span>
++            <div class="arch-node arch-node-core"><b>Correlation &amp; Analysis</b><small>Dashboards · Queries · Alerts</small></div>
++            <span class="arch-connector">↓</span>
++            <div class="arch-node arch-node-workloads"><b>Operational Decisions</b><small>Detect · Investigate · Improve</small></div>
++          </div>
++        </div>
++        <div class="architecture-footer"><span class="architecture-pulse"></span> Illustrative reference architectures based on the engineering domains represented in this portfolio.</div>
++      </div>
++    </div>
++  </section>
++  <!--/ Architecture & Engineering Showcase End /-->
++
++  <!--/ Section Experience Star /-->
+   <!--/ Section Experience Star /-->
+   <section id="experience" class="portfolio-mf sect-pt4 route">
+     <div class="container">
+@@ -528,6 +603,51 @@
+   </section>
+   <!--/ Section Experience End /-->
+ 
++  <!--/ My Engineering Journey /-->
++  <section id="journey" class="journey-mf sect-pt4 route">
++    <div class="container">
++      <div class="title-box text-center" data-reveal>
++        <span class="section-kicker">THE ROAD SO FAR / ۰۳</span>
++        <h3 class="title-a">My Engineering Journey</h3>
++        <p class="subtitle-a">From systems administration to building and leading cloud-native platforms.</p>
++        <div class="line-mf"></div>
++      </div>
++      <div class="journey-intro" data-reveal><span class="journey-emblem">✺</span><p>Each chapter added a new layer: infrastructure fundamentals, automation, platform engineering, technical leadership and architecture ownership.</p></div>
++      <div class="journey-timeline">
++        <details class="journey-item" open data-reveal>
++          <summary><span class="journey-year">2026 — NOW</span><span class="journey-marker"></span><span class="journey-heading"><b>Amertka DevOps Yara (ADY)</b><small>Founder &amp; Technical Lead · Feb 2026 – Present</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
++          <div class="journey-detail"><p>Building DevOps and platform engineering capabilities, shaping technical direction and developing reusable engineering solutions.</p><div class="architecture-stack"><span>Platform Strategy</span><span>DevOps</span><span>Automation</span><span>Architecture</span></div></div>
++        </details>
++        <details class="journey-item" data-reveal>
++          <summary><span class="journey-year">2025 — 2026</span><span class="journey-marker"></span><span class="journey-heading"><b>FornaxEnergy</b><small>DevOps Consultant · Dec 2025 – Jul 2026</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
++          <div class="journey-detail"><p>Consulting on DevOps practices and production infrastructure, with a focus on dependable delivery and operations.</p><div class="architecture-stack"><span>DevOps</span><span>Infrastructure</span><span>CI/CD</span></div></div>
++        </details>
++        <details class="journey-item" data-reveal>
++          <summary><span class="journey-year">2025 — 2026</span><span class="journey-marker"></span><span class="journey-heading"><b>Carpet Online Shop Tavakolzadeh</b><small>Founder &amp; Technical Lead · Oct 2025 – Feb 2026</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
++          <div class="journey-detail"><p>Designed and operated a self-hosted digital commerce platform, connecting application delivery with infrastructure operations.</p><div class="architecture-stack"><span>Odoo</span><span>Docker</span><span>Linux</span><span>CI/CD</span></div></div>
++        </details>
++        <details class="journey-item" data-reveal>
++          <summary><span class="journey-year">2025</span><span class="journey-marker"></span><span class="journey-heading"><b>Smartech (Digikala Group)</b><small>DevOps Consultant · Jul 2025 – Oct 2025</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
++          <div class="journey-detail"><p>Contributed DevOps consulting and platform operations experience in a high-scale digital commerce environment.</p><div class="architecture-stack"><span>DevOps</span><span>Kubernetes</span><span>Automation</span></div></div>
++        </details>
++        <details class="journey-item" data-reveal>
++          <summary><span class="journey-year">2024 — 2025</span><span class="journey-marker"></span><span class="journey-heading"><b>Utechia</b><small>DevOps Specialist · Sep 2024 – Jul 2025</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
++          <div class="journey-detail"><p>Improved Kubernetes deployment workflows, CI/CD pipelines, infrastructure automation, SSO and monitoring practices.</p><div class="architecture-stack"><span>Kubernetes</span><span>GitLab CI</span><span>Ansible</span><span>SSO</span><span>Monitoring</span></div></div>
++        </details>
++        <details class="journey-item" data-reveal>
++          <summary><span class="journey-year">2020 — 2024</span><span class="journey-marker"></span><span class="journey-heading"><b>Narvan Startup Studio</b><small>DevOps Team Lead · Sep 2022 – Sep 2024<br>DevOps Engineer · Oct 2020 – Sep 2022</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
++          <div class="journey-detail"><p>Progressed from engineering delivery into technical leadership, guiding platform standards, Kubernetes operations, observability, security and disaster recovery.</p><div class="architecture-stack"><span>Kubernetes</span><span>CI/CD</span><span>Observability</span><span>CIS Benchmarks</span><span>PostgreSQL</span><span>IaC</span></div></div>
++        </details>
++        <details class="journey-item" data-reveal>
++          <summary><span class="journey-year">2019 — 2020</span><span class="journey-marker"></span><span class="journey-heading"><b>Kianis</b><small>System Administrator · Sep 2019 – Sep 2020</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
++          <div class="journey-detail"><p>Built the systems and networking foundation through administration, infrastructure support and service reliability.</p><div class="architecture-stack"><span>Linux</span><span>Windows Server</span><span>Networking</span><span>Virtualization</span></div></div>
++        </details>
++      </div>
++      <p class="journey-note">Timeline entries reflect the roles and dates currently listed in the Experience section.</p>
++    </div>
++  </section>
++  <!--/ My Engineering Journey End /-->
++
+   <!--/ Section Tools Star /-->
+   <section id="skills" class="services-mf route">
+     <div class="container">
+@@ -781,7 +901,7 @@
+   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+   <script src="lib/typed/typed.min.js"></script>
+ 
+-  <script src="js/main.js"></script>
++  <script src="js/main.js?v=2"></script>
+ 
+   <script>
+     $(document).ready(function(){
+diff --git a/js/main.js b/js/main.js
+index 921d887..626b158 100644
+--- a/js/main.js
++++ b/js/main.js
+@@ -18,6 +18,32 @@
+     }
+   });
+ 
++
++  // Accessible architecture showcase tabs
++  document.querySelectorAll('[data-architecture]').forEach(function (tab) {
++    tab.addEventListener('click', function () {
++      var selected = tab.getAttribute('data-architecture');
++      document.querySelectorAll('[data-architecture]').forEach(function (item) {
++        var active = item === tab;
++        item.classList.toggle('is-active', active);
++        item.setAttribute('aria-selected', active ? 'true' : 'false');
++      });
++      document.querySelectorAll('[data-architecture-panel]').forEach(function (panel) {
++        var active = panel.getAttribute('data-architecture-panel') === selected;
++        panel.hidden = !active;
++        panel.classList.toggle('is-active', active);
++      });
++    });
++    tab.addEventListener('keydown', function (event) {
++      if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
++      var tabs = Array.prototype.slice.call(document.querySelectorAll('[data-architecture]'));
++      var index = tabs.indexOf(tab);
++      var next = tabs[(index + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
++      next.focus();
++      next.click();
++    });
++  });
++
+   // Back to top button
+   $(window).scroll(function() {
+     if ($(this).scrollTop() > 100) {

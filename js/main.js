@@ -18,6 +18,32 @@
     }
   });
 
+
+  // Accessible architecture showcase tabs
+  document.querySelectorAll('[data-architecture]').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var selected = tab.getAttribute('data-architecture');
+      document.querySelectorAll('[data-architecture]').forEach(function (item) {
+        var active = item === tab;
+        item.classList.toggle('is-active', active);
+        item.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      document.querySelectorAll('[data-architecture-panel]').forEach(function (panel) {
+        var active = panel.getAttribute('data-architecture-panel') === selected;
+        panel.hidden = !active;
+        panel.classList.toggle('is-active', active);
+      });
+    });
+    tab.addEventListener('keydown', function (event) {
+      if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('[data-architecture]'));
+      var index = tabs.indexOf(tab);
+      var next = tabs[(index + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+      next.focus();
+      next.click();
+    });
+  });
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {

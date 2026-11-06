@@ -49,7 +49,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css?v=2" rel="stylesheet">
-  <link href="css/persepolis.css?v=3" rel="stylesheet">
+  <link href="css/persepolis.css?v=4" rel="stylesheet">
 
 </head>
 
@@ -77,7 +77,13 @@
             <a class="nav-link js-scroll" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll" href="#journey">Journey</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#architecture">Architecture</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#skills">Working Tools</a>
@@ -265,6 +271,75 @@
   </section>
   <!--/ Section Projects End /-->
 
+  <!--/ Architecture & Engineering Showcase /-->
+  <section id="architecture" class="architecture-mf sect-pt4 route">
+    <div class="container">
+      <div class="title-box text-center" data-reveal>
+        <span class="section-kicker">SYSTEM DESIGN / ۰۲</span>
+        <h3 class="title-a">Architecture &amp; Engineering Showcase</h3>
+        <p class="subtitle-a">A closer look at the engineering patterns behind reliable platforms.</p>
+        <div class="line-mf"></div>
+      </div>
+      <div class="architecture-shell" data-reveal>
+        <div class="architecture-tabs" role="tablist" aria-label="Architecture examples">
+          <button class="architecture-tab is-active" type="button" role="tab" id="arch-tab-platform" aria-controls="arch-panel-platform" aria-selected="true" data-architecture="platform">01 · Platform</button>
+          <button class="architecture-tab" type="button" role="tab" id="arch-tab-delivery" aria-controls="arch-panel-delivery" aria-selected="false" data-architecture="delivery">02 · Delivery</button>
+          <button class="architecture-tab" type="button" role="tab" id="arch-tab-observability" aria-controls="arch-panel-observability" aria-selected="false" data-architecture="observability">03 · Observability</button>
+        </div>
+        <div class="architecture-panel is-active" id="arch-panel-platform" role="tabpanel" aria-labelledby="arch-tab-platform" data-architecture-panel="platform">
+          <div class="architecture-copy">
+            <span class="architecture-label">CLOUD-NATIVE FOUNDATION</span>
+            <h4>Kubernetes Platform Engineering</h4>
+            <p>A layered platform approach: infrastructure provisioning, cluster services, GitOps-based application delivery and secure workloads.</p>
+            <div class="architecture-stack"><span>Kubernetes</span><span>Helm</span><span>Argo CD</span><span>Ansible</span><span>Ingress</span><span>Secrets</span></div>
+          </div>
+          <div class="architecture-diagram" aria-label="Platform architecture flow diagram">
+            <div class="arch-node arch-node-source"><b>Infrastructure</b><small>Compute · Network · Storage</small></div>
+            <span class="arch-connector">↓</span>
+            <div class="arch-node arch-node-core"><b>Kubernetes</b><small>Clusters · Policies · Networking</small></div>
+            <span class="arch-connector">↓</span>
+            <div class="arch-node-row"><div class="arch-node"><b>Platform Services</b><small>Ingress · Secrets · DNS</small></div><div class="arch-node"><b>GitOps</b><small>Argo CD · Helm</small></div></div>
+            <span class="arch-connector">↓</span>
+            <div class="arch-node arch-node-workloads"><b>Production Workloads</b><small>Resilient · Observable · Secure</small></div>
+          </div>
+        </div>
+        <div class="architecture-panel" id="arch-panel-delivery" role="tabpanel" aria-labelledby="arch-tab-delivery" data-architecture-panel="delivery" hidden>
+          <div class="architecture-copy">
+            <span class="architecture-label">AUTOMATED SOFTWARE DELIVERY</span>
+            <h4>CI/CD &amp; GitOps Delivery Flow</h4>
+            <p>Consistent delivery from source control to production through automated validation, container builds, security checks and declarative deployment.</p>
+            <div class="architecture-stack"><span>GitLab CI</span><span>GitHub Actions</span><span>Docker</span><span>Container Registry</span><span>Argo CD</span></div>
+          </div>
+          <div class="architecture-diagram architecture-flow" aria-label="Continuous delivery flow diagram">
+            <div class="arch-flow-node"><i>01</i><b>Commit</b><small>Source control</small></div><span class="arch-flow-arrow">→</span>
+            <div class="arch-flow-node"><i>02</i><b>Build &amp; Test</b><small>CI pipeline</small></div><span class="arch-flow-arrow">→</span>
+            <div class="arch-flow-node"><i>03</i><b>Secure</b><small>Quality gates</small></div><span class="arch-flow-arrow">→</span>
+            <div class="arch-flow-node"><i>04</i><b>Deploy</b><small>GitOps sync</small></div>
+            <div class="arch-flow-outcome">Repeatable releases · Auditable changes · Safer rollbacks</div>
+          </div>
+        </div>
+        <div class="architecture-panel" id="arch-panel-observability" role="tabpanel" aria-labelledby="arch-tab-observability" data-architecture-panel="observability" hidden>
+          <div class="architecture-copy">
+            <span class="architecture-label">OPERATIONS &amp; RELIABILITY</span>
+            <h4>Observability &amp; Reliability</h4>
+            <p>Bring metrics, logs and traces together to understand system health, detect anomalies and support faster, evidence-based incident response.</p>
+            <div class="architecture-stack"><span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Jaeger</span><span>Alerting</span></div>
+          </div>
+          <div class="architecture-diagram" aria-label="Observability signal flow diagram">
+            <div class="arch-signal-row"><div class="arch-node"><b>Metrics</b><small>Prometheus</small></div><div class="arch-node"><b>Logs</b><small>Loki</small></div><div class="arch-node"><b>Traces</b><small>Jaeger</small></div></div>
+            <span class="arch-connector">↓</span>
+            <div class="arch-node arch-node-core"><b>Correlation &amp; Analysis</b><small>Dashboards · Queries · Alerts</small></div>
+            <span class="arch-connector">↓</span>
+            <div class="arch-node arch-node-workloads"><b>Operational Decisions</b><small>Detect · Investigate · Improve</small></div>
+          </div>
+        </div>
+        <div class="architecture-footer"><span class="architecture-pulse"></span> Illustrative reference architectures based on the engineering domains represented in this portfolio.</div>
+      </div>
+    </div>
+  </section>
+  <!--/ Architecture & Engineering Showcase End /-->
+
+  <!--/ Section Experience Star /-->
   <!--/ Section Experience Star /-->
   <section id="experience" class="portfolio-mf sect-pt4 route">
     <div class="container">
@@ -528,6 +603,51 @@
   </section>
   <!--/ Section Experience End /-->
 
+  <!--/ My Engineering Journey /-->
+  <section id="journey" class="journey-mf sect-pt4 route">
+    <div class="container">
+      <div class="title-box text-center" data-reveal>
+        <span class="section-kicker">THE ROAD SO FAR / ۰۳</span>
+        <h3 class="title-a">My Engineering Journey</h3>
+        <p class="subtitle-a">From systems administration to building and leading cloud-native platforms.</p>
+        <div class="line-mf"></div>
+      </div>
+      <div class="journey-intro" data-reveal><span class="journey-emblem">✺</span><p>Each chapter added a new layer: infrastructure fundamentals, automation, platform engineering, technical leadership and architecture ownership.</p></div>
+      <div class="journey-timeline">
+        <details class="journey-item" open data-reveal>
+          <summary><span class="journey-year">2026 — NOW</span><span class="journey-marker"></span><span class="journey-heading"><b>Amertka DevOps Yara (ADY)</b><small>Founder &amp; Technical Lead · Feb 2026 – Present</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
+          <div class="journey-detail"><p>Building DevOps and platform engineering capabilities, shaping technical direction and developing reusable engineering solutions.</p><div class="architecture-stack"><span>Platform Strategy</span><span>DevOps</span><span>Automation</span><span>Architecture</span></div></div>
+        </details>
+        <details class="journey-item" data-reveal>
+          <summary><span class="journey-year">2025 — 2026</span><span class="journey-marker"></span><span class="journey-heading"><b>FornaxEnergy</b><small>DevOps Consultant · Dec 2025 – Jul 2026</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
+          <div class="journey-detail"><p>Consulting on DevOps practices and production infrastructure, with a focus on dependable delivery and operations.</p><div class="architecture-stack"><span>DevOps</span><span>Infrastructure</span><span>CI/CD</span></div></div>
+        </details>
+        <details class="journey-item" data-reveal>
+          <summary><span class="journey-year">2025 — 2026</span><span class="journey-marker"></span><span class="journey-heading"><b>Carpet Online Shop Tavakolzadeh</b><small>Founder &amp; Technical Lead · Oct 2025 – Feb 2026</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
+          <div class="journey-detail"><p>Designed and operated a self-hosted digital commerce platform, connecting application delivery with infrastructure operations.</p><div class="architecture-stack"><span>Odoo</span><span>Docker</span><span>Linux</span><span>CI/CD</span></div></div>
+        </details>
+        <details class="journey-item" data-reveal>
+          <summary><span class="journey-year">2025</span><span class="journey-marker"></span><span class="journey-heading"><b>Smartech (Digikala Group)</b><small>DevOps Consultant · Jul 2025 – Oct 2025</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
+          <div class="journey-detail"><p>Contributed DevOps consulting and platform operations experience in a high-scale digital commerce environment.</p><div class="architecture-stack"><span>DevOps</span><span>Kubernetes</span><span>Automation</span></div></div>
+        </details>
+        <details class="journey-item" data-reveal>
+          <summary><span class="journey-year">2024 — 2025</span><span class="journey-marker"></span><span class="journey-heading"><b>Utechia</b><small>DevOps Specialist · Sep 2024 – Jul 2025</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
+          <div class="journey-detail"><p>Improved Kubernetes deployment workflows, CI/CD pipelines, infrastructure automation, SSO and monitoring practices.</p><div class="architecture-stack"><span>Kubernetes</span><span>GitLab CI</span><span>Ansible</span><span>SSO</span><span>Monitoring</span></div></div>
+        </details>
+        <details class="journey-item" data-reveal>
+          <summary><span class="journey-year">2020 — 2024</span><span class="journey-marker"></span><span class="journey-heading"><b>Narvan Startup Studio</b><small>DevOps Team Lead · Sep 2022 – Sep 2024<br>DevOps Engineer · Oct 2020 – Sep 2022</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
+          <div class="journey-detail"><p>Progressed from engineering delivery into technical leadership, guiding platform standards, Kubernetes operations, observability, security and disaster recovery.</p><div class="architecture-stack"><span>Kubernetes</span><span>CI/CD</span><span>Observability</span><span>CIS Benchmarks</span><span>PostgreSQL</span><span>IaC</span></div></div>
+        </details>
+        <details class="journey-item" data-reveal>
+          <summary><span class="journey-year">2019 — 2020</span><span class="journey-marker"></span><span class="journey-heading"><b>Kianis</b><small>System Administrator · Sep 2019 – Sep 2020</small></span><span class="journey-toggle" aria-hidden="true">+</span></summary>
+          <div class="journey-detail"><p>Built the systems and networking foundation through administration, infrastructure support and service reliability.</p><div class="architecture-stack"><span>Linux</span><span>Windows Server</span><span>Networking</span><span>Virtualization</span></div></div>
+        </details>
+      </div>
+      <p class="journey-note">Timeline entries reflect the roles and dates currently listed in the Experience section.</p>
+    </div>
+  </section>
+  <!--/ My Engineering Journey End /-->
+
   <!--/ Section Tools Star /-->
   <section id="skills" class="services-mf route">
     <div class="container">
@@ -781,7 +901,7 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/typed/typed.min.js"></script>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 
   <script>
     $(document).ready(function(){
