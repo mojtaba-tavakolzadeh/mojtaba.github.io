@@ -1,0 +1,76 @@
+--- a/index.html
++++ b/index.html
+@@ -98,7 +98,6 @@
+   <div id="home" class="intro route">
+     <div class="hero-photo" role="img" aria-label="Sunset through the Gate of All Nations at Persepolis, framed by two lamassu guardians"></div>
+     <div class="hero-scrim" aria-hidden="true"></div>
+-    <div class="hero-ornament hero-ornament-left" aria-hidden="true">𓃭</div>
+     <div class="hero-ornament hero-ornament-right" aria-hidden="true">✺</div>
+     <div class="intro-content">
+       <div class="hero-copy">
+@@ -114,7 +113,7 @@
+         </div>
+         <div class="hero-metrics">
+           <div><strong>7<span>+</span></strong><small>Years of experience</small></div>
+-          <div><strong>30<span>%</span></strong><small>Infrastructure cost reduction</small></div>
++          <div><strong>4</strong><small>Featured projects</small></div>
+           <div><strong>24<span>/7</span></strong><small>Production mindset</small></div>
+         </div>
+         <div class="hero-social-proof"><span class="status-dot"></span> Open to meaningful engineering challenges</div>
+--- a/css/persepolis.css
++++ b/css/persepolis.css
+@@ -701,14 +701,14 @@
+ .intro .hero-photo { transform:scale(1.025); animation: hero-drift 24s ease-in-out infinite alternate; }
+ .intro .hero-scrim { background:linear-gradient(90deg,rgba(7,15,29,.78) 0%,rgba(7,15,29,.52) 48%,rgba(7,15,29,.18) 100%),linear-gradient(0deg,rgba(8,15,25,.58),transparent 55%); }
+ .intro-content { display:flex; align-items:center; justify-content:flex-start; text-align:left; padding:110px 8vw 80px; }
+-.hero-copy { width:min(760px,100%); margin:0; position:relative; z-index:2; text-shadow:0 2px 24px rgba(0,0,0,.28); }
++.hero-copy { width:min(790px,100%); margin:0; position:relative; z-index:2; text-shadow:0 2px 18px rgba(0,0,0,.48); }
+ .hero-eyebrow,.section-kicker { display:inline-flex; align-items:center; gap:12px; color:var(--iran-gold-light); font-size:11px; font-weight:700; letter-spacing:3px; }
+ .hero-eyebrow-line { width:38px; height:1px; background:var(--iran-gold); }
+ .hero-fa { color:#f6d27d; font-family:'Vazirmatn',sans-serif; font-size:clamp(24px,3vw,38px); font-weight:700; margin:18px 0 8px; }
+-.hero-title { color:#fff; font-size:clamp(35px,5.2vw,66px); line-height:1.12; font-weight:700; letter-spacing:-1.8px; margin:0 0 18px; }
++.hero-title { color:#fff; font-size:clamp(38px,5.1vw,68px); line-height:1.16; font-weight:700; letter-spacing:-1.35px; margin:0 0 22px; text-wrap:balance; }
+ .hero-title span { color:#e8bd65; }
+-.hero-description { color:rgba(255,255,255,.88); max-width:620px; font-size:17px; line-height:1.8; margin-bottom:18px; }
+-.hero-role { color:#f5d58d; font-size:14px; min-height:26px; margin:10px 0 25px; }
++.hero-description { color:#fff; max-width:650px; font-size:17px; font-weight:500; line-height:1.9; margin-bottom:20px; text-shadow:0 2px 8px rgba(0,0,0,.7); }
++.hero-role { color:#ffe2a0; font-size:15px; font-weight:600; min-height:28px; margin:12px 0 26px; text-shadow:0 2px 8px rgba(0,0,0,.65); }
+ .hero-role-label { color:rgba(255,255,255,.7); margin-right:9px; }
+ .text-slider { font-weight:700; }
+ .text-slider-items { display:none; }
+@@ -719,13 +719,13 @@
+ .hero-actions .btn-ghost { border:1px solid rgba(255,255,255,.7); color:#fff; background:rgba(10,20,35,.22); }
+ .hero-cv-link { color:#fff; font-size:12px; padding:10px 8px; }
+ .hero-cv-link:hover { color:var(--iran-gold-light); }
+-.hero-metrics { display:flex; flex-wrap:wrap; gap:0; margin-top:42px; padding-top:23px; border-top:1px solid rgba(255,255,255,.25); max-width:620px; }
+-.hero-metrics div { display:flex; flex-direction:column; padding:0 30px; border-right:1px solid rgba(255,255,255,.2); }
++.hero-metrics { display:flex; flex-wrap:wrap; gap:0; margin-top:38px; padding:22px 0 0; border-top:1px solid rgba(255,255,255,.38); max-width:650px; }
++.hero-metrics div { display:flex; flex-direction:column; min-width:150px; padding:0 28px; border-right:1px solid rgba(255,255,255,.28); }
+ .hero-metrics div:first-child { padding-left:0; }
+ .hero-metrics div:last-child { border:0; }
+-.hero-metrics strong { color:#fff; font-size:27px; line-height:1.1; }
++.hero-metrics strong { color:#fff; font-size:30px; font-weight:700; line-height:1.1; text-shadow:0 2px 8px rgba(0,0,0,.65); }
+ .hero-metrics strong span { color:var(--iran-gold-light); font-size:17px; }
+-.hero-metrics small { color:rgba(255,255,255,.72); font-size:10px; margin-top:7px; letter-spacing:.5px; }
++.hero-metrics small { color:#fff; font-size:12px; font-weight:500; margin-top:8px; letter-spacing:.25px; text-shadow:0 2px 7px rgba(0,0,0,.75); }
+ .hero-social-proof { color:rgba(255,255,255,.75); font-size:11px; margin-top:25px; letter-spacing:.3px; }
+ .status-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#69d6a0; margin-right:8px; box-shadow:0 0 0 5px rgba(105,214,160,.15); }
+ .hero-ornament { position:absolute; z-index:1; color:rgba(244,213,138,.25); pointer-events:none; font-size:clamp(90px,15vw,210px); animation:ornament-float 8s ease-in-out infinite; }
+@@ -770,14 +770,14 @@
+  .hero-copy { text-align:center; }
+  .hero-eyebrow { justify-content:center; font-size:9px; letter-spacing:1.8px; }
+  .hero-title { font-size:39px; letter-spacing:-1px; }
+- .hero-description { font-size:14px; }
++ .hero-description { font-size:15px; line-height:1.75; }
+  .hero-role { font-size:12px; }
+  .hero-actions { justify-content:center; }
+  .hero-actions .btn { padding:12px 14px; }
+  .hero-metrics { justify-content:center; margin-top:30px; }
+- .hero-metrics div { padding:0 13px; }
++ .hero-metrics div { min-width:0; padding:0 13px; }
+  .hero-metrics strong { font-size:23px; }
+- .hero-metrics small { font-size:9px; }
++ .hero-metrics small { font-size:10px; }
+  .hero-scroll { left:0; right:0; text-align:center; }
+  .hero-ornament-left { left:-24px; top:16%; }
+  .hero-ornament-right { right:-15px; bottom:10%; }
